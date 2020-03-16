@@ -16,7 +16,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Game"
+run/main_scene="res://Test.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1400
+window/size/height=1050
+window/stretch/aspect="keep"
 
 [rendering]
 
