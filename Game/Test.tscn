@@ -15,19 +15,21 @@ fov = 71.7
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.8 )
 texture = ExtResource( 1 )
 
-[node name="RigidBody" type="RigidBody" parent="."]
-
-[node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
-transform = Transform( 0.221755, 0, 0, 0, 0.221755, 0, 0, 0, 0.0820307, -0.160372, 0.476464, -3.53684 )
-shape = SubResource( 2 )
-
-[node name="CSGBox" type="CSGBox" parent="RigidBody/CollisionShape"]
-
 [node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, -0.35, -1.3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 2.1, 0, 0, 0, 0.0462635, 0, 0, 0, 1.83494, 0.19927, -0.406727, -2.905 )
+transform = Transform( 0.519862, 0, 0, 0, 0.0235817, 0, 0, 0, 0.770579, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="StaticBody/CollisionShape"]
+visible = false
+
+[node name="RigidBody" type="RigidBody" parent="."]
+transform = Transform( 0.31684, 0, 0, 0, 1, 0, 0, 0, 0.291392, -0.0535394, 0.55006, -0.964317 )
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
+transform = Transform( 0.41904, 0, 0, 0, 0.0968198, 0, 0, 0, 0.506682, 0, 0, 0 )
 shape = SubResource( 1 )
 
-[node name="CSGBox2" type="CSGBox" parent="StaticBody/CollisionShape"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+[node name="CSGBox" type="CSGBox" parent="RigidBody/CollisionShape"]
