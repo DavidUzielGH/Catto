@@ -1,28 +1,43 @@
 extends KinematicBody
 
-var gravity = -9.8
+var gravity = -50
 var velocity = Vector3(0, 0, 0)
+var going_idle = true
+var camera
 
-const MAX_SPEED = 1
-const ACCELERATION = 1
-const DE_ACCELERATION = 5
+const SPEED = .8
+const MAX_SPEED = 2
+const ACCELERATION = .5
+const DE_ACCELERATION =30
 
 func _ready():
-	pass
+	camera = get_node("../../Camera").get_global_transform()
 	
 func _physics_process(delta):
-	if velocity.z < MAX_SPEED and velocity.z > -MAX_SPEED:
-		if(Input.is_action_just_pressed("move_fw")):
-			velocity.z -= ACCELERATION
-		if(Input.is_action_just_pressed("move_bw")):
-			velocity.z += ACCELERATION
-	if(Input.is_action_just_pressed("move_left")):
-		velocity.x += ACCELERATION
-	if(Input.is_action_just_pressed("move_right")):
-		velocity.x -= ACCELERATION
-	velocity.y += delta * gravity
-	velocity = move_and_slide(velocity, Vector3(0,-1,0))
-
-
-func move_in_direction():
-	pass
+	var dir = Vector3()
+	if(Input.is_action_pressed("move_fw")):
+		dir+=-camera.basis[2]
+	if(Input.is_action_pressed("move_bw")):
+		dir+=camera.basis[2]
+	if(Input.is_action_pressed("move_left")):
+		dir+=camera.basis[0]
+	if(Input.is_action_pressed("move_right")):
+		dir+=-camera.basis[0]
+	dir.y = 0
+	dir = dir.normalized()
+	velocity.y = delta * gravity
+	var hv = velocity
+	hv.y = 0
+	var new_pos = dir * SPEED
+	print(new_pos)
+	var accel = DE_ACCELERATION
+	
+	#if(dir.dot(hv) < 0):
+	#	accel = ACCELERATION
+	hv = hv.linear_interpolate(new_pos, accel * delta)
+	
+	velocity.x = hv.x
+	velocity.z = hv.z
+	
+	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
+	
