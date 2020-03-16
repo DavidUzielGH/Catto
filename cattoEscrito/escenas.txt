@@ -18,8 +18,13 @@ Escena 4: El men sale y lo intenta animar(afuera del tren)
 
 "Tu no eres el primero que ha estado mal en este tren", empieza a llover y lo invita a pasar para contarle unas historias
 
-Escena 5: Flasback del vejistorio(Dentro del tren deteriorado, uno de sus ultimos viajes (del tren))
+Escena 5: Inicio del Flasback del vejistorio(Dentro del tren deteriorado, uno de sus ultimos viajes (del tren))
 
 El men tiene que ayudar a una dama a encontrar a su hijo que se perdio, puede ir a ver a un musico tocar una historia triste, o llevar al morro alli, dependiendo de que orden haga cosas, va preguntando por el mocoso de todas formas, al conductor(que escuchas quejarse de haber perdido las llaves al cuarto de maquinas, y no ha visto al morro), al musico(que quiere no encuentra su libreta y esta muy triste por ello, que vio al infante cuando le pidio una cancion, y cree haberlo visto correr hacia el frente del tren), a la madre(que lo vio ir con el musico), a pasajeros equis (todos dicen algo de que lo vieron ir hacia el frente (musico despues conductor))
 
-El morro esta en el cuarto de maquinas, leyendo el diario del musico, llorando por mil y un cosas
+El morro esta en el cuarto de maquinas, leyendo el diario del musico, llorando por mil y un cosas, da exposicion de los personajes mientras van por el
+tren devolviendo cosas, ayuda al musico y asi
+
+Escena ?: Fin de flashback hablando con morro prota (dentro de un vagon vacio del tren detenido)
+
+El don dice a que viene todo esto y el prota le pregunta porque es indigente
