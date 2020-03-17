@@ -1,5 +1,7 @@
 extends KinematicBody
 
+var entrar = false
+
 var gravity = -50
 var velocity = Vector3(0, 0, 0)
 var going_idle = true
@@ -11,7 +13,8 @@ const ACCELERATION = .5
 const DE_ACCELERATION =30
 
 func _ready():
-	camera = get_node("../../Camera").get_global_transform()
+	camera = self.get_parent().get_node("Camera").get_global_transform()
+	print(camera)
 	
 func _physics_process(delta):
 	var dir = Vector3()
@@ -23,13 +26,14 @@ func _physics_process(delta):
 		dir+=camera.basis[0]
 	if(Input.is_action_pressed("move_right")):
 		dir+=-camera.basis[0]
+	if(Input.is_action_just_pressed("interact")):
+		pass
 	dir.y = 0
 	dir = dir.normalized()
 	velocity.y = delta * gravity
 	var hv = velocity
 	hv.y = 0
 	var new_pos = dir * SPEED
-	print(new_pos)
 	var accel = DE_ACCELERATION
 	
 	#if(dir.dot(hv) < 0):
@@ -41,3 +45,12 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
 	
+func _on_Area_body_entered(body):
+	if(body == self):
+		print("Desea entrar?")
+		
+
+func _on_Area_body_exited(body):
+	if(body == self):
+		print("Ya no desea entrar")
+		entrar = false
