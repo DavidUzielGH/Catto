@@ -1,23 +1,29 @@
 extends KinematicBody
 
-var entrar = false
+var enter = false
 
 var gravity = -50
 var velocity = Vector3(0, 0, 0)
 var going_idle = true
 var camera
+var curr_area
+var new_area
 
 const SPEED = .8
 const MAX_SPEED = 2
 const ACCELERATION = .5
 const DE_ACCELERATION =30
 
+#COLLISION LAYERS
+const DOORS = 3
 func _ready():
 	camera = self.get_parent().get_node("Camera").get_global_transform()
 	print(camera)
 	
 func _physics_process(delta):
 	var dir = Vector3()
+	if(enter == true and Input.is_action_just_pressed("interact")):
+		get_tree().change_scene("res://"+new_area+".tscn")
 	if(Input.is_action_pressed("move_fw")):
 		dir+=-camera.basis[2]
 	if(Input.is_action_pressed("move_bw")):
@@ -45,12 +51,11 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
 	
-func _on_Area_body_entered(body):
-	if(body == self):
-		print("Desea entrar?")
-		
+func _on_Area_area_entered(area):
+	if(area.get_collision_layer_bit(DOORS)):
+		enter = true
+		new_area = area.get_name()
 
-func _on_Area_body_exited(body):
-	if(body == self):
-		print("Ya no desea entrar")
-		entrar = false
+
+func _on_Area_area_exited(area):
+	print(area)

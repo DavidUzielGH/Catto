@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/cuartodevago.png-91d4dea0e4701f0c247a941c01ba5262.s3tc.stex"
-path.etc2="res://.import/cuartodevago.png-91d4dea0e4701f0c247a941c01ba5262.etc2.stex"
+path.s3tc="res://.import/Shadow.png-ad0b0edbaedd91b6e1392cde1e58990b.s3tc.stex"
+path.etc2="res://.import/Shadow.png-ad0b0edbaedd91b6e1392cde1e58990b.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://cuartodevago.png"
-dest_files=[ "res://.import/cuartodevago.png-91d4dea0e4701f0c247a941c01ba5262.s3tc.stex", "res://.import/cuartodevago.png-91d4dea0e4701f0c247a941c01ba5262.etc2.stex" ]
+source_file="res://Shadow.png"
+dest_files=[ "res://.import/Shadow.png-ad0b0edbaedd91b6e1392cde1e58990b.s3tc.stex", "res://.import/Shadow.png-ad0b0edbaedd91b6e1392cde1e58990b.etc2.stex" ]
 
 [params]
 
