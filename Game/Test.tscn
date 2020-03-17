@@ -2,13 +2,13 @@
 
 [ext_resource path="res://KinematicBody.gd" type="Script" id=1]
 [ext_resource path="res://Cat-Sweet-PNG-File.png" type="Texture" id=2]
-[ext_resource path="res://WhatsApp Image 2020-03-15 at 4.25.18 PM.jpeg" type="Texture" id=3]
+[ext_resource path="res://IMG_20200315_132303.jpg" type="Texture" id=3]
 
 [sub_resource type="BoxShape" id=1]
 
 [sub_resource type="BoxShape" id=2]
 
-[sub_resource type="CapsuleShape" id=5]
+[sub_resource type="CapsuleShape" id=3]
 
 [sub_resource type="Environment" id=4]
 
@@ -72,11 +72,12 @@ shape = SubResource( 2 )
 visible = false
 
 [node name="KinematicBody" type="KinematicBody" parent="Node"]
+editor/display_folded = true
 script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Node/KinematicBody"]
 transform = Transform( 0.133, 0, 0, 0, 0.097, 0, 0, 0, 0.0256634, 0.276, -0.105, -0.42 )
-shape = SubResource( 5 )
+shape = SubResource( 3 )
 
 [node name="Sprite3D" type="Sprite3D" parent="Node/KinematicBody/CollisionShape"]
 transform = Transform( 0.075319, 0, 0, 0, 0.103285, 0, 0, 0, 0.677309, 0, 0, 0 )
@@ -89,5 +90,5 @@ environment = SubResource( 4 )
 fov = 71.7
 
 [node name="Sprite3D" type="Sprite3D" parent="Camera"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.8 )
+transform = Transform( 0.16, 0, 0, 0, 0.21, 0, 0, 0, 1, 0, 0, -8.8 )
 texture = ExtResource( 3 )
