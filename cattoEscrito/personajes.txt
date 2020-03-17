@@ -9,4 +9,4 @@ Gato hijo - pos alli esta
 
 gato escritor - Odia contar historias infantiles, lo hace por que es lo mas seguro, el quiere hacer novelas
 
-gato conductor - Super estresado de estar conduciendo un tren viejo, lo odia, odia el peligro, odia tener que llevar gente en algo asi de peligroso
+gato conductor/maquinista - Super estresado de estar conduciendo un tren viejo, lo odia, odia el peligro, odia tener que llevar gente en algo asi de peligroso
