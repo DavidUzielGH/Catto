@@ -25,10 +25,11 @@ func _ready():
 	
 func _physics_process(delta):
 	var dir = Vector3()
-	if(enter == true and Input.is_action_just_pressed("interact")):
-		global.set_previous_scene(self.get_parent().get_name())
-		global.set_spawn(new_area)
-		SceneChanger.change_scene(new_area)
+	if(enter == true):
+		if(Input.is_action_just_pressed("interact")):
+			global.set_previous_scene(self.get_parent().get_name())
+			global.set_spawn(new_area)
+			SceneChanger.change_scene(new_area, get_parent().get_name())
 	if(Input.is_action_pressed("move_fw")):
 		dir+=-camera.basis[2]
 	if(Input.is_action_pressed("move_bw")):
