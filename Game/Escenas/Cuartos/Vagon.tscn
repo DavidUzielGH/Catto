@@ -11,84 +11,84 @@
 [node name="Vagon" type="Spatial"]
 script = ExtResource( 3 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Collisions" type="Node" parent="."]
 
-[node name="Floor" type="StaticBody" parent="Node"]
+[node name="Floor" type="StaticBody" parent="Collisions"]
 transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 1.44036, 0.1, -0.35, -1.15142 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Node/Floor"]
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Floor"]
 transform = Transform( 0.52, 0, 0, 0, 0.024, 0, 0, 0, 0.416, 0, 0, 0 )
 shape = SubResource( 1 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/Floor/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/Floor/CollisionShape"]
 visible = false
 
-[node name="Wall" type="StaticBody" parent="Node"]
+[node name="Wall" type="StaticBody" parent="Collisions"]
 transform = Transform( 0.695785, 0, 0, 0, 1, 0, 0, 0, 1, 0.143604, 0, -2.14003 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Node/Wall"]
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.0666761, 0, -0.198, 0.364 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/Wall/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall/CollisionShape"]
 visible = false
 
-[node name="Wall2" type="StaticBody" parent="Node"]
+[node name="Wall2" type="StaticBody" parent="Collisions"]
 transform = Transform( 0.695785, 0, 0, 0, 1, 0, 0, 0, 1, 0.143604, 0, -0.255175 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Node/Wall2"]
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.0666761, 0, -0.198434, 0.0214968 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/Wall2/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall2/CollisionShape"]
 visible = false
 
-[node name="Wall3" type="StaticBody" parent="Node"]
+[node name="Wall3" type="StaticBody" parent="Collisions"]
 transform = Transform( 0.00984565, 0, 0, 0, 1, 0, 0, 0, 18.2558, -0.525809, 0, -1.36409 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Node/Wall3"]
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.0666761, 0, 0, 0 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/Wall3/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall3/CollisionShape"]
 visible = false
 
-[node name="Wall4" type="StaticBody" parent="Node"]
+[node name="Wall4" type="StaticBody" parent="Collisions"]
 transform = Transform( 0.00984565, 0, 0, 0, 1, 0, 0, 0, 19.9933, 0.738391, 0, -1.36409 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Node/Wall4"]
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall4"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.0666761, 0, 0, 0 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/Wall4/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall4/CollisionShape"]
 visible = false
 
-[node name="CuartoDeVago" type="Area" parent="Node"]
+[node name="CuartoDeVago" type="Area" parent="Collisions"]
 collision_layer = 8
 collision_mask = 8
 
-[node name="CollisionShape2" type="CollisionShape" parent="Node/CuartoDeVago"]
+[node name="CollisionShape2" type="CollisionShape" parent="Collisions/CuartoDeVago"]
 transform = Transform( 0.2, 0, 0, 0, 0.404, 0, 0, 0, 0.067, 0.107, -0.028, -1.72211 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/CuartoDeVago/CollisionShape2"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/CuartoDeVago/CollisionShape2"]
 visible = false
 
-[node name="SpawnPoint" type="Spatial" parent="Node/CuartoDeVago"]
+[node name="SpawnPoint" type="Spatial" parent="Collisions/CuartoDeVago"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.218, -1.537 )
 
-[node name="Main" type="Area" parent="Node"]
+[node name="Main" type="Area" parent="Collisions"]
 collision_layer = 8
 collision_mask = 8
 
-[node name="CollisionShape2" type="CollisionShape" parent="Node/Main"]
+[node name="CollisionShape2" type="CollisionShape" parent="Collisions/Main"]
 transform = Transform( 0.2, 0, 0, 0, 0.404, 0, 0, 0, 0.067, 0.107, -0.028, -0.324885 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="Node/Main/CollisionShape2"]
+[node name="CSGBox" type="CSGBox" parent="Collisions/Main/CollisionShape2"]
 visible = false
 
-[node name="SpawnPoint" type="Spatial" parent="Node/Main"]
+[node name="SpawnPoint" type="Spatial" parent="Collisions/Main"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.218, -0.337609 )
 
 [node name="Camera" type="Camera" parent="."]
