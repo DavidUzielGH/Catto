@@ -86,6 +86,16 @@ shape = SubResource( 4 )
 [node name="CSGBox" type="CSGBox" parent="Node/Matt/CollisionShape"]
 visible = false
 
+[node name="Vagon" type="Area" parent="Node"]
+collision_layer = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="Node/Vagon"]
+transform = Transform( 0.403361, 0, 0, 0, 0.647596, 0, 0, 0, 0.0551727, 0.0449954, 0.159207, -0.399707 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="Node/Vagon/CollisionShape"]
+visible = false
+
 [node name="Camera" type="Camera" parent="."]
 fov = 71.7
 
@@ -94,4 +104,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.795 )
 texture = ExtResource( 1 )
 
 [node name="KinematicBody" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, 0, -0.431145 )
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, -0.273319, -0.431145 )

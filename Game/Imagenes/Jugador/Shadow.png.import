@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Cat-Sweet-PNG-File.png-30e8606483fb36bb250d7f9d37fefb90.s3tc.stex"
-path.etc2="res://.import/Cat-Sweet-PNG-File.png-30e8606483fb36bb250d7f9d37fefb90.etc2.stex"
+path.s3tc="res://.import/Shadow.png-b244a3e7474a395c1629e413e8aee0e4.s3tc.stex"
+path.etc2="res://.import/Shadow.png-b244a3e7474a395c1629e413e8aee0e4.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Cat-Sweet-PNG-File.png"
-dest_files=[ "res://.import/Cat-Sweet-PNG-File.png-30e8606483fb36bb250d7f9d37fefb90.s3tc.stex", "res://.import/Cat-Sweet-PNG-File.png-30e8606483fb36bb250d7f9d37fefb90.etc2.stex" ]
+source_file="res://Imagenes/Jugador/Shadow.png"
+dest_files=[ "res://.import/Shadow.png-b244a3e7474a395c1629e413e8aee0e4.s3tc.stex", "res://.import/Shadow.png-b244a3e7474a395c1629e413e8aee0e4.etc2.stex" ]
 
 [params]
 

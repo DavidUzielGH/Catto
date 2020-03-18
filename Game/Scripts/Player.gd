@@ -14,6 +14,9 @@ const MAX_SPEED = 2
 const ACCELERATION = .5
 const DE_ACCELERATION =30
 
+const FRONT = 0
+const BACK = 1
+
 #COLLISION LAYERS
 const DOORS = 3
 func _ready():
@@ -23,7 +26,9 @@ func _ready():
 func _physics_process(delta):
 	var dir = Vector3()
 	if(enter == true and Input.is_action_just_pressed("interact")):
-		get_tree().change_scene("res://"+new_area+".tscn")
+		global.set_previous_scene(self.get_parent().get_name())
+		global.set_spawn(new_area)
+		global.goto_scene("res://Escenas/Cuartos/"+new_area+".tscn")
 	if(Input.is_action_pressed("move_fw")):
 		dir+=-camera.basis[2]
 	if(Input.is_action_pressed("move_bw")):
@@ -42,8 +47,6 @@ func _physics_process(delta):
 	var new_pos = dir * SPEED
 	var accel = DE_ACCELERATION
 	
-	#if(dir.dot(hv) < 0):
-	#	accel = ACCELERATION
 	hv = hv.linear_interpolate(new_pos, accel * delta)
 	
 	velocity.x = hv.x
