@@ -21,6 +21,7 @@ run/main_scene="res://Escenas/Cuartos/Vagon.tscn"
 [autoload]
 
 global="*res://Scripts/global.gd"
+SceneChanger="*res://Escenas/Templates/SceneChanger.tscn"
 
 [display]
 
@@ -66,5 +67,5 @@ interact={
 
 [rendering]
 
-environment/default_clear_color=Color( 0.0431373, 0.0431373, 0.0431373, 1 )
+environment/default_clear_color=Color( 0.290196, 0.290196, 0.290196, 1 )
 environment/default_environment="res://default_env.tres"

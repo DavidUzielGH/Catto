@@ -5,7 +5,7 @@ extends Node
 # var a = 2
 # var b = "text"
 
-
+var scene_fade = false
 var current_scene = null
 var spawn_number = 0
 var previous_scene = null
@@ -39,3 +39,6 @@ func _deferred_goto_scene(path):
 
 	# Optionally, to make it compatible with the SceneTree.change_scene() API.
 	get_tree().set_current_scene(current_scene)
+
+func scene_faded():
+	scene_fade = true
