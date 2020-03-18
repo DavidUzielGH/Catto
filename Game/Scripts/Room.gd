@@ -13,7 +13,7 @@ func _ready():
 
 func spawn():
 	print(SceneChanger.get_previous_room())
-	var spawn_point = get_node("Node/"+SceneChanger.get_previous_room()+"/SpawnPoint")
+	var spawn_point = get_node("Collisions/"+SceneChanger.get_previous_room()+"/SpawnPoint")
 	var preloadedPlayer = preload("res://Player.tscn")
 	var player = preloadedPlayer.instance()
 	player.transform.origin = spawn_point.transform.origin
