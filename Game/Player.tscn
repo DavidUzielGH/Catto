@@ -10,11 +10,11 @@
 transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, 0, 0 )
 script = ExtResource( 1 )
 
-[node name="Area" type="Area" parent="."]
+[node name="AreaDetection" type="Area" parent="."]
 collision_layer = 15
 collision_mask = 0
 
-[node name="CollisionShape2" type="CollisionShape" parent="Area"]
+[node name="CollisionShape2" type="CollisionShape" parent="AreaDetection"]
 transform = Transform( 0.133, 0, 0, 0, 0.097, 0, 0, 0, 0.0256634, 0, 0, 0 )
 shape = SubResource( 1 )
 
@@ -31,5 +31,5 @@ texture = ExtResource( 2 )
 transform = Transform( 0.17282, 0, 0, 0, -1.80563e-07, -0.054721, 0, 0.738577, -5.94117e-09, 0, -1.26126, -0.342742 )
 opacity = 0.5
 texture = ExtResource( 3 )
-[connection signal="area_entered" from="Area" to="." method="_on_Area_area_entered"]
-[connection signal="area_exited" from="Area" to="." method="_on_Area_area_exited"]
+[connection signal="area_entered" from="AreaDetection" to="." method="_on_Area_AreaDetection_entered"]
+[connection signal="area_exited" from="AreaDetection" to="." method="_on_Area_AreaDetection_exited"]

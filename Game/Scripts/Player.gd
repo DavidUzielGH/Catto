@@ -21,11 +21,10 @@ const BACK = 1
 const DOORS = 3
 func _ready():
 	camera = self.get_parent().get_node("Camera").get_global_transform()
-	print(camera)
 	
 func _physics_process(delta):
 	var dir = Vector3()
-	if(enter == true):
+	if(enter == true and SceneChanger.is_inteact_disabled() == false):
 		if(Input.is_action_just_pressed("interact")):
 			global.set_previous_scene(self.get_parent().get_name())
 			global.set_spawn(new_area)
@@ -55,14 +54,15 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
 	
-func _on_Area_area_entered(area):
+func _on_Area_AreaDetection_entered(area):
 	if(area.get_collision_layer_bit(DOORS)):
 		enter = true
 		new_area = area.get_name()
 
 
-func _on_Area_area_exited(area):
-	print(area)
+func _on_Area_AreaDetection_exited(area):
+	enter = false
+	print(area.get_name())
 
 signal timer_end
 
