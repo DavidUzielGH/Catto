@@ -23,5 +23,5 @@ func change_scene(path, prev, delay = 0.1):
 func get_previous_room():
 	return previous_scene
 
-func is_inteact_disabled():
+func is_interact_disabled():
 	return disable_interact

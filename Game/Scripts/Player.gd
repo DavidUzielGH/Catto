@@ -6,9 +6,7 @@ var gravity = -50
 var velocity = Vector3(0, 0, 0)
 var going_idle = true
 var camera
-var curr_area
 var new_area
-var timer
 const SPEED = .8
 const MAX_SPEED = 2
 const ACCELERATION = .5
@@ -21,7 +19,7 @@ func _ready():
 	
 func _physics_process(delta):
 	var dir = Vector3()
-	if(enter == true and SceneChanger.is_inteact_disabled() == false):
+	if(enter == true and SceneChanger.is_interact_disabled() == false):
 		if(Input.is_action_just_pressed("interact")):
 			global.set_previous_scene(self.get_parent().get_name())
 			global.set_spawn(new_area)
@@ -61,21 +59,3 @@ func _on_Area_AreaDetection_entered(area):
 func _on_Area_AreaDetection_exited(area):
 	enter = false
 	print(area.get_name())
-
-signal timer_end
-
-func _wait( seconds ):
-	self._create_timer(self, seconds, true, "_emit_timer_end_signal")
-	yield(self,"timer_end")
-
-func _emit_timer_end_signal():
-	emit_signal("timer_end")
-
-func _create_timer(object_target, float_wait_time, bool_is_oneshot, string_function):
-	timer = Timer.new()
-	timer.set_one_shot(bool_is_oneshot)
-	timer.set_timer_process_mode(0)
-	timer.set_wait_time(float_wait_time)
-	timer.connect("timeout", object_target, string_function)
-	self.add_child(timer)
-	timer.start()
