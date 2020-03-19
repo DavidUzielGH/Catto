@@ -14,9 +14,6 @@ const MAX_SPEED = 2
 const ACCELERATION = .5
 const DE_ACCELERATION =30
 
-const FRONT = 0
-const BACK = 1
-
 #COLLISION LAYERS
 const DOORS = 3
 func _ready():
@@ -41,7 +38,8 @@ func _physics_process(delta):
 		pass
 	dir.y = 0
 	dir = dir.normalized()
-	velocity.y = delta * gravity
+	if(!self.is_on_floor()):
+		velocity.y = delta * gravity
 	var hv = velocity
 	hv.y = 0
 	var new_pos = dir * SPEED

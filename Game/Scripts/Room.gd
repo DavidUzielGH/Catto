@@ -13,9 +13,11 @@ func _ready():
 
 func spawn():
 	print(SceneChanger.get_previous_room())
-	var spawn_point = get_node("Collisions/"+SceneChanger.get_previous_room()+"/SpawnPoint")
+	var spawn_point = get_node("DoorsSpawns/"+SceneChanger.get_previous_room()+"/SpawnPoint")
 	var preloadedPlayer = preload("res://Player.tscn")
 	var player = preloadedPlayer.instance()
+	print(spawn_point.get_name())
+	print(player.get_name())
 	player.transform.origin = spawn_point.transform.origin
 	add_child(player)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
