@@ -4,9 +4,9 @@
 font_path = "res://Estilos/Fuentes/Helvetica 400.ttf"
 
 [sub_resource type="DynamicFont" id=2]
-size = 20
-extra_spacing_top = 12
-extra_spacing_bottom = -13
+size = 29
+extra_spacing_top = 2
+extra_spacing_bottom = -7
 font_data = SubResource( 1 )
 
 [resource]

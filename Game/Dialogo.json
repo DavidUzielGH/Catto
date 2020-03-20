@@ -1,9 +1,5 @@
-{"001":[
-	{"name":"Mom", "expression": "neutral", "text":"Lorem ipsum dolor sit amet."},
-	{"name":"Shit", "expression": "neutral", "text":"Lorem ipsum dolor sit amet."},
-],
-"002":[
-	{"name":"Mom", "expression": "neutral", "text":"Lorem ipsum dolor sit amet."},
-	{"name":"Shit", "expression": "neutral", "text":"Lorem ipsum dolor sit amet."},
-],
+{
+	"0":{"0": {"name":"Maria", "portrait":"Shadow", "side":"right", "dialogue":"Yo era uno de esos borrachos de callejon común"},
+		 "1":{"name":"Lugi", "portrait":"trasero", "side":"left", "dialogue":"A mi me decian papá antes"}
+		}
 }
