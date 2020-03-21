@@ -1,5 +1,33 @@
 {
-	"0":{"0": {"name":"Maria", "portrait":"Shadow", "side":"right", "dialogue":"Yo era uno de esos borrachos de callejon común"},
-		 "1":{"name":"Lugi", "portrait":"trasero", "side":"left", "dialogue":"A mi me decian papá antes"}
-		}
+  "Scene0":{
+    "Branch0":{
+      "Line0":{"name":"Fifi", "portrait":"neutral", "side":"right", "dialogue":"Esto es una linea predecisión"},
+      "Choice":{
+	"Option0":{
+	  "Head":"Hacer esto?",
+	  "Tail":"Branch1"
+	},
+	"Option1":{
+	  "Head":"Hacer esto otro?",
+	  "Tail":"Branch2"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Fifi", "portrait":"feliz", "side":"left", "dialogue":"Escogiste Bien"},
+      "Event":{
+	"Name":"Fifi",
+	"Level":"1"
+      },
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line0":{"name":"Fifi", "portrait":"feliz", "side":"right", "dialogue":"Escogiste Mal"},
+      "Event":{
+	"Name":"Fifi",
+	"Level":"2"
+      },
+      "End":true
+    }
+  }
 }

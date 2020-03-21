@@ -1,0 +1,30 @@
+
+{	
+	"0":{
+		"0":{"name":"fifi", "portrait":"fifi_triste", "side":"left", "dialogue": "My school is the only one that isn't off because of the cuarintine"},
+		"1":{"name":"fifi", "portrait":"fifi_enojado", "side":"left", "dialogue": "Screw them, there are already over a hundred dead in my state alone. i don't want to be a fucking statistic."},
+		"2":{"name":"fifi", "portrait":"fifi_sorprendido", "side":"left", "dialogue": "But i'll probably lose some classes"},
+		"3":{"name":"fifi", "portrait":"neutral", "side":"left", "dialogue": "i just need to take my mind off these things, i'll go with old man snowball, he always clears my mind up"}
+	},
+
+	"1":{
+	
+		"0":{"name":"fifi", "portrait":"neutral", "side":"left", "dialogue": "SNOWBALLS!!"},
+
+		"1":{"name":"snowball", "portrait":"snowball_neutral", "side":"right", "dialogue": "I hear you"},
+
+		"2":{"name":"fifi", "portrait":"neutral", "side":"left", "dialogue": "OLD MAN SNOWBALLS!!!!!!"},
+
+		"3":{"name":"snowball", "portrait":"snowball_neutral", "side":"right", "dialogue": "I HEARD YOU!"},
+
+		"4":{"name":"fifi", "portrait":"neutral", "side":"left", "dialogue": "hi mr snowballs"},
+
+		"5":{"name":"snowball", "portrait":"snowball_neutral", "side":"right", "dialogue": "well hello fifi, What brings you here so early, usually you don't come till late in the evening"},
+
+		"6":{"name":"fifi", "portrait":"fifi_triste", "side":"left", "dialogue": "I didn't feel up for school today"},
+		"7":{"name":"fifi", "portrait":"neutral", "side":"left", "dialogue": "i wanted to finally hear the story about how you met your baby here"},
+
+		"8":{"name":"snowball", "portrait":"snowball_triste", "side":"right", "dialogue": "Aye, this old train has watched over me well"},
+		"9":{"name":"snowball", "portrait":"snowball_feliz", "side":"right", "dialogue": "Okay, here goes the story, but it puts me sentimental, so listen closely the first time"}
+	}
+}

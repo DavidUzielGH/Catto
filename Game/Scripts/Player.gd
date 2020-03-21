@@ -1,6 +1,7 @@
 extends KinematicBody
 
 signal next_pressed
+signal desition_made
 
 var enter = false
 
@@ -29,14 +30,12 @@ func _ready():
 	
 func _physics_process(delta):
 	var dir = Vector3()
-	if(Input.is_action_just_pressed("interact")):
-		if(enter == true and SceneChanger.is_interact_disabled() == false):
-			SceneChanger.change_scene(new_area, get_parent().get_name())
-		elif(dialog_area == true and dialog_box.is_on_dialogue == false):
-			dialog_box.start("0")
-		elif(dialog_box.is_on_dialogue == true):
-			emit_signal("next_pressed")
 	if(!dialog_box.is_on_dialogue):
+		if(Input.is_action_just_pressed("interact")):
+			if(enter == true and SceneChanger.is_interact_disabled() == false):
+				SceneChanger.change_scene(new_area, get_parent().get_name())
+			elif(dialog_area == true):
+ 				dialog_box.start("0")
 		if(Input.is_action_pressed("move_fw")):
 			dir+=-camera.basis[2]
 		if(Input.is_action_pressed("move_bw")):
@@ -45,6 +44,18 @@ func _physics_process(delta):
 			dir+=camera.basis[0]
 		if(Input.is_action_pressed("move_right")):
 			dir+=-camera.basis[0]
+	elif(dialog_box.is_on_dialogue):
+		if(Input.is_action_just_pressed("interact")):
+			if(dialog_box.is_on_desition):
+				emit_signal("desition_made")
+			else:
+				emit_signal("next_pressed")
+		if(dialog_box.is_on_desition):
+			if(Input.is_action_just_pressed("move_fw")):
+				dialog_box.select("up")
+			if(Input.is_action_just_pressed("move_bw")):
+				dialog_box.select("down")
+				
 	dir.y = 0
 	dir = dir.normalized()
 	if(!self.is_on_floor()):
@@ -64,16 +75,18 @@ func _physics_process(delta):
 func _on_Area_AreaDetection_entered(area):
 	if(area.get_collision_layer_bit(DOORS)):
 		enter = true
+		dialog_area = false
+		interact = false
 		new_area = area.get_name()
-	if(area.get_collision_layer_bit(PEOPLE)):
+	elif(area.get_collision_layer_bit(PEOPLE)):
 		dialog_area = true
+		enter = false
+		interact = false
 		
 
 
 func _on_Area_AreaDetection_exited(area):
 	enter = false
+	dialog_area = false
+	interact = false
 	print(area.get_name())
-
-
-func _on_Dialog_next_pressed():
-	pass # Replace with function body.
