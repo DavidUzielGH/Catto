@@ -1,14 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Imagenes/Jugador/Fifi.png" type="Texture" id=1]
+[ext_resource path="res://Escenas/Templates/Personaje.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 
 [node name="*CAMBIAR NOMBRE" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.429, 0, 0, 0 )
+transform = Transform( 0.793, 0, 0, 0, 0.793, 0, 0, 0, 0.429, 0, 0, 0 )
+script = ExtResource( 2 )
 
 [node name="Area" type="Area" parent="."]
-transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0 )
+transform = Transform( 0.190504, 0, 0, 0, 0.190504, 0, 0, 0, 0.190504, 0, 0, 0 )
 collision_layer = 2
 collision_mask = 2
 
@@ -16,10 +18,11 @@ collision_mask = 2
 shape = SubResource( 1 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 0.158754, 0, 0, 0, 0.158754, 0, 0, 0, 0.158754, 0, 0, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 shape = SubResource( 1 )
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform( 0.737474, 0, 0, 0, 0.737474, 0, 0, 0, 0.737474, 0, 0, 0 )
+transform = Transform( 0.109, 0, 0, 0, 0.109, 0, 0, 0, 0.737, 0, 0, 0 )
 texture = ExtResource( 1 )

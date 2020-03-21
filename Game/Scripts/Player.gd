@@ -15,6 +15,7 @@ var interact = false
 var dialog_box
 var prev_room
 var parent
+var char_name
 
 const SPEED = .8
 const MAX_SPEED = 2
@@ -39,7 +40,8 @@ func _physics_process(delta):
 			if(enter == true and SceneChanger.is_interact_disabled() == false):
 				SceneChanger.change_scene(new_area, get_parent().get_name())
 			elif(dialog_area == true):
-				dialog_box.start("0")
+				var new_char = parent.get_node("Characters/"+char_name)
+				dialog_box.start(str(new_char.get_scene()))
 		if(Input.is_action_pressed("move_fw")):
 			dir+=-camera.basis[2]
 		if(Input.is_action_pressed("move_bw")):
@@ -75,11 +77,12 @@ func _physics_process(delta):
 	velocity.z = hv.z
 	
 	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
+
 	
 func _on_Area_AreaDetection_entered(area):
-	var area_name = area.get_name()
 	var parent_name = parent.get_name()
 	if(area.get_collision_layer_bit(DOORS)):
+		var area_name = area.get_name()
 		if("-" in area.get_name() and SceneChanger.previous_scene != area_name and area_name.find(parent_name.substr(0, 5)) != -1):
 			SceneChanger.previous_scene = parent_name
 			SceneChanger.continue_room(area_name, SceneChanger.previous_scene)
@@ -89,6 +92,7 @@ func _on_Area_AreaDetection_entered(area):
 			interact = false
 			new_area = area_name
 	elif(area.get_collision_layer_bit(PEOPLE)):
+		char_name = area.get_name()
 		dialog_area = true
 		enter = false
 		interact = false

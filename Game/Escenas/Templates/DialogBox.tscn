@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/DialogBox.gd" type="Script" id=1]
 [ext_resource path="res://Estilos/Shader_pj.tres" type="Material" id=2]
@@ -6,6 +6,102 @@
 [ext_resource path="res://Estilos/Thing.tres" type="StyleBox" id=4]
 [ext_resource path="res://Estilos/Font2.tres" type="Theme" id=5]
 [ext_resource path="res://Estilos/Font.tres" type="Theme" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.2, 0.211765, 0.580392, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=9]
+resource_name = "Glow"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:custom_styles/panel:bg_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.200506, 0.213237, 0.578507, 1 ), Color( 0.352941, 0.364706, 0.745098, 1 ), Color( 0.200506, 0.213237, 0.578507, 1 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.2, 0.211765, 0.580392, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "Glow"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:custom_styles/panel:bg_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.200506, 0.213237, 0.578507, 1 ), Color( 0.352941, 0.364706, 0.745098, 1 ), Color( 0.200506, 0.213237, 0.578507, 1 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.2, 0.211765, 0.580392, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "Glow"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:custom_styles/panel:bg_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.200506, 0.213237, 0.578507, 1 ), Color( 0.352941, 0.364706, 0.745098, 1 ), Color( 0.200506, 0.213237, 0.578507, 1 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.2, 0.211765, 0.580392, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "Glow"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:custom_styles/panel:bg_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.200506, 0.213237, 0.578507, 1 ), Color( 0.352941, 0.364706, 0.745098, 1 ), Color( 0.200506, 0.213237, 0.578507, 1 ) ]
+}
 
 [node name="Dialog" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -73,6 +169,7 @@ __meta__ = {
 }
 
 [node name="Desition" type="Control" parent="Control"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 
@@ -82,7 +179,10 @@ margin_left = 250.0
 margin_top = 80.0
 margin_right = 1250.0
 margin_bottom = 140.0
-custom_styles/panel = ExtResource( 4 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Text" type="Label" parent="Control/Desition/0"]
 anchor_left = 0.5
@@ -98,6 +198,12 @@ theme = ExtResource( 5 )
 text = "LOREM IPSUM DOLOR SIT AMET"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Desition/0"]
+anims/Glow = SubResource( 9 )
 
 [node name="1" type="Panel" parent="Control/Desition"]
 visible = false
@@ -105,7 +211,10 @@ margin_left = 250.0
 margin_top = 160.0
 margin_right = 1250.0
 margin_bottom = 220.0
-custom_styles/panel = ExtResource( 4 )
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Text" type="Label" parent="Control/Desition/1"]
 anchor_left = 0.5
@@ -121,6 +230,12 @@ theme = ExtResource( 5 )
 text = "LOREM IPSUM DOLOR SIT AMET"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Desition/1"]
+anims/Glow = SubResource( 4 )
 
 [node name="2" type="Panel" parent="Control/Desition"]
 visible = false
@@ -128,7 +243,10 @@ margin_left = 250.0
 margin_top = 240.0
 margin_right = 1250.0
 margin_bottom = 300.0
-custom_styles/panel = ExtResource( 4 )
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Text" type="Label" parent="Control/Desition/2"]
 anchor_left = 0.5
@@ -145,13 +263,19 @@ text = "LOREM IPSUM DOLOR SIT AMET"
 align = 1
 valign = 1
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Desition/2"]
+anims/Glow = SubResource( 6 )
+
 [node name="3" type="Panel" parent="Control/Desition"]
 visible = false
 margin_left = 250.0
 margin_top = 320.0
 margin_right = 1250.0
 margin_bottom = 380.0
-custom_styles/panel = ExtResource( 4 )
+custom_styles/panel = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Text" type="Label" parent="Control/Desition/3"]
 anchor_left = 0.5
@@ -167,3 +291,6 @@ theme = ExtResource( 5 )
 text = "LOREM IPSUM DOLOR SIT AMET"
 align = 1
 valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Desition/3"]
+anims/Glow = SubResource( 8 )

@@ -115,6 +115,14 @@ func select(direction):
 		selected_desition+=1
 	print(selected_desition)
 	desition.get_node(str(selected_desition))
+	play_anim(selected_desition)
+	
+func play_anim(number):
+	desition.get_node("0/AnimationPlayer").stop(true)
+	desition.get_node("1/AnimationPlayer").stop(true)
+	desition.get_node("2/AnimationPlayer").stop(true)
+	desition.get_node("3/AnimationPlayer").stop(true)
+	desition.get_node(str(number)+"/AnimationPlayer").play("Glow")
 
 func toggle_visibility():
 	visible = !visible

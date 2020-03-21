@@ -94,3 +94,17 @@ shape = SubResource( 3 )
 [node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Vagon1-2/CollisionShape2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 visible = false
+
+[node name="Vagon3-1" type="Area" parent="DoorsSpawns"]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2" type="CollisionShape" parent="DoorsSpawns/Vagon3-1"]
+transform = Transform( 0.242814, 0, -0.00484773, 0, 0.205, 0, 0.130776, 0, 0.00778873, 1.08314, -0.426262, -2.52804 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Vagon3-1/CollisionShape2"]
+visible = false
+
+[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Vagon3-1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.13777, -0.541413, -2.50355 )
