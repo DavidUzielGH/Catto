@@ -1,0 +1,96 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Escenas/Cuartos/CosaNegraAbajo.gd" type="Script" id=1]
+[ext_resource path="res://Imagenes/Escenarios/CosaNegra-Abajo.png" type="Texture" id=2]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
+
+[sub_resource type="BoxShape" id=3]
+
+[node name="CosaNegraAbajo" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+fov = 71.7
+
+[node name="Sprite3D" type="Sprite3D" parent="Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.795 )
+texture = ExtResource( 2 )
+
+[node name="Collisions" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.197, 0 )
+
+[node name="Floor" type="StaticBody" parent="Collisions"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Floor"]
+transform = Transform( 0.210436, 0, -0.773285, 0, 0.019, 0, 0.0928264, 0, 1.75302, 0.285, -2.763, -0.817 )
+shape = SubResource( 1 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Floor/CollisionShape"]
+visible = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="Collisions/Floor"]
+transform = Transform( 0.253914, 0, -0.944102, 0, 0.019, 0, 0.188106, 0, 1.27439, 0.401, -2.763, -1.283 )
+shape = SubResource( 1 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Floor/CollisionShape2"]
+visible = false
+
+[node name="Wall" type="StaticBody" parent="Collisions"]
+transform = Transform( 0.852292, 0, -0.523066, 0, 1, 0, 0.523066, 0, 0.852292, 2.083, -3.267, -4.137 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall"]
+transform = Transform( -0.130194, 0, 0.0178974, 0, 0.227, 0, -1.21404, 0, -0.00191932, 0.33, 0.756, 3.061 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall/CollisionShape"]
+visible = false
+
+[node name="Wall2" type="StaticBody" parent="Collisions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0831, -3.32, -4.13665 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall2"]
+transform = Transform( 1.00612, 0, 0.0102699, 0, 0.406, 0, -1.29638, 0, 0.00797048, -2.175, 0.561, 2.79 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall2/CollisionShape"]
+visible = false
+
+[node name="Wall3" type="StaticBody" parent="Collisions"]
+transform = Transform( 1.075, 0, 0, 0, 1, 0, 0, 0, 1, 2.0831, -3.32, -4.13665 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall3"]
+transform = Transform( 0.225873, 0, -0.00450952, 0, 0.205, 0, 0.130776, 0, 0.00778873, -0.930196, 0.696738, 1.58449 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall3/CollisionShape"]
+visible = false
+
+[node name="Wall4" type="StaticBody" parent="Collisions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.294, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall4"]
+transform = Transform( 0.530215, 0, 0, 0, 0.290846, 0, 0, 0, 0.0418274, -0.265622, -0.38903, -0.247997 )
+shape = SubResource( 3 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Wall4/CollisionShape"]
+visible = false
+
+[node name="DoorsSpawns" type="Node" parent="."]
+
+[node name="Vagon1-2" type="Area" parent="DoorsSpawns"]
+collision_layer = 8
+collision_mask = 8
+
+[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Vagon1-2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.324514, -0.432546, -0.344318 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="DoorsSpawns/Vagon1-2"]
+transform = Transform( 0.548228, 0, 0, 0, 0.290846, 0, 0, 0, 0.0418274, -0.286518, -0.48603, -0.335762 )
+shape = SubResource( 3 )
+
+[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Vagon1-2/CollisionShape2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+visible = false

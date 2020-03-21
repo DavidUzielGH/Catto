@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Sin título-3.png-7ca1133500bc8cf7274485c60c0c2d9e.s3tc.stex"
-path.etc2="res://.import/Sin título-3.png-7ca1133500bc8cf7274485c60c0c2d9e.etc2.stex"
+path.s3tc="res://.import/Vagon.png-c018a4e131b237df41e65ed73dffb95e.s3tc.stex"
+path.etc2="res://.import/Vagon.png-c018a4e131b237df41e65ed73dffb95e.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Imagenes/Escenarios/Sin título-3.png"
-dest_files=[ "res://.import/Sin título-3.png-7ca1133500bc8cf7274485c60c0c2d9e.s3tc.stex", "res://.import/Sin título-3.png-7ca1133500bc8cf7274485c60c0c2d9e.etc2.stex" ]
+source_file="res://Imagenes/Escenarios/Vagon.png"
+dest_files=[ "res://.import/Vagon.png-c018a4e131b237df41e65ed73dffb95e.s3tc.stex", "res://.import/Vagon.png-c018a4e131b237df41e65ed73dffb95e.etc2.stex" ]
 
 [params]
 
