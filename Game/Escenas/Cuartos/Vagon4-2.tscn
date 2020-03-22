@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Escenas/Cuartos/Vagon.gd" type="Script" id=1]
+[ext_resource path="res://Escenas/Cuartos/Vagon4-2.gd" type="Script" id=1]
 [ext_resource path="res://Imagenes/Escenarios/Vagon.png" type="Texture" id=2]
 [ext_resource path="res://Imagenes/Escenarios/Cinematic.png" type="Texture" id=3]
 
