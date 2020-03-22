@@ -16,3 +16,6 @@ func set_scene_level(nombre):
 
 func get_scene():
 	return actual_scene
+
+func set_scene(value):
+	actual_scene = value

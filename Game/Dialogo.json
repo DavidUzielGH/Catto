@@ -1,6 +1,25 @@
 {
   "Scene0":{
     "Branch0":{
+      "Line0":{"name":"Fifi", "portrait":"triste", "side":"left", "dialogue": "My school is the only one that isn't off because of the cuarintine"},
+      "Line1":{"name":"Fifi", "portrait":"neutral", "side":"left", "dialogue": "Screw them, there are already over a hundred dead in my state alone. i don't want to be a fucking statistic."},
+      "Line2":{"name":"Fifi", "portrait":"feliz", "side":"left", "dialogue": "But i'll probably lose some classes"},
+      "Line3":{"name":"Fifi", "portrait":"neutral", "side":"left", "dialogue": "i just need to take my mind off these things, i'll go with old man Old Snowball, he always clears my mind up"},
+      "Line4":{"name":"Fifi", "portrait":"neutral", "side":"left", "dialogue": "SNOWBALLS!!"},
+      "Line5":{"name":"Old Snowball", "portrait":"neutral", "side":"right", "dialogue": "I hear you"},
+      "Line6":{"name":"Fifi", "portrait":"neutral", "side":"left", "dialogue": "OLD MAN SNOWBALLS!!!!!!"},
+      "Line7":{"name":"Old Snowball", "portrait":"neutral", "side":"right", "dialogue": "I HEARD YOU!"},
+      "Line8":{"name":"Fifi", "portrait":"neutral", "side":"left", "dialogue": "hi mr Old Snowballs"},
+      "Line9":{"name":"Old Snowball", "portrait":"neutral", "side":"right", "dialogue": "well hello Fifi, What brings you here so early, usually you don't come till late in the evening"},
+      "Line10":{"name":"Fifi", "portrait":"triste", "side":"left", "dialogue": "I didn't feel up for school today"},
+      "Line11":{"name":"Fifi", "portrait":"neutral", "side":"left", "dialogue": "i wanted to finally hear the story about how you met your baby here"},
+      "Line12":{"name":"Old Snowball", "portrait":"neutral", "side":"right", "dialogue": "Aye, this old train has watched over me well"},
+      "Line13":{"name":"Old Snowball", "portrait":"feliz", "side":"right", "dialogue": "Okay, here goes the story, but it puts me sentimental, so listen closely the first time"},
+      "End":true
+    }
+  },
+  "Scene1":{
+    "Branch0":{
       "Line0":{"name":"Fifi", "portrait":"neutral", "side":"right", "dialogue":"Esto es una linea predecisión"},
       "Choice":{
 	"Option0":{
@@ -14,7 +33,7 @@
       }
     },
     "Branch1":{
-      "Line0":{"name":"Fifi", "portrait":"feliz", "side":"left", "dialogue":"Escogiste Bien"},
+      "Line":{"name":"Fifi", "portrait":"feliz", "side":"left", "dialogue":"Escogiste Bien"},
       "Event":{
 	"Name":"Fifi",
 	"Level":"1"
@@ -22,12 +41,30 @@
       "End":true
     }, 
     "Branch2":{ 
-      "Line0":{"name":"Fifi", "portrait":"feliz", "side":"right", "dialogue":"Escogiste Mal"},
+      "Line":{"name":"Fifi", "portrait":"feliz", "side":"right", "dialogue":"Escogiste Mal"},
       "Event":{
 	"Name":"Fifi",
 	"Level":"2"
       },
       "End":true
+    }
+  },
+  "Scene2":{
+    "Branch0":{
+      "Line":{"name":"Maquinista", "portrait":"feliz", "side":"left", "dialogue":"Yo era tronco comun"},
+      "Choice":{
+        "Option0":{
+          "Head":"pls bro",
+          "Tail":"Branch1"
+        },
+	"Option1":{
+	  "Head":"pls bro",
+	  "Tail":"Branch2"
+	}
+      }
+    },
+    "Branch1":{
+      "Line":{"name":"", "portrait":"", "side":"", "dialogue":""}
     }
   }
 }

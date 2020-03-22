@@ -3,7 +3,7 @@ extends CanvasLayer
 signal scene_changed()
 
 var animation_player
-var previous_scene = "Vagon3-1"
+var previous_scene = "Main"
 var disable_interact = false
 var prev_room = ""
 

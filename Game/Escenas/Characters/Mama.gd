@@ -2,7 +2,7 @@ extends "res://Scripts/Character.gd"
 
 
 func _ready():
-	pass # Replace with function body.
+	set_scene(1)
 
 func _physics_process(delta):
 	pass

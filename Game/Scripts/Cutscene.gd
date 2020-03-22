@@ -5,9 +5,8 @@ signal next_pressed;
 var dialog
 
 func _ready():
-	get_node("Sprite").set_texture("Imagenes/Cutscene/"+get_parent().get_name()+".png")
 	dialog = get_node("Dialog")
-	start_cutscene(global.get_cutscene_level());
+	start_cutscene("0");
 
 func _physics_process(delta):
 	if(Input.is_action_just_pressed("interact")):
@@ -16,5 +15,5 @@ func _physics_process(delta):
 func start_cutscene(scene):
 	dialog.start(scene)
 	yield(dialog, "dialogue_ended")
-	global.raise_cutscene_level()
-	SceneChanger.change_scene(global.get_cutscene_level(), get_parent().get_name())
+	print("bromium")
+	SceneChanger.change_scene("Vagon1-1", "Main")

@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+signal dialogue_ended
 
 var data : Dictionary
 var scene :Dictionary
@@ -60,6 +61,7 @@ func start(scene_number : String):
 					desition_texts[key] = scene[curr_branch].get("Choice").get(key).get("Head")
 				set_desition_box();
 				is_on_desition = true
+				play_anim(0)
 				yield(parent, "desition_made")
 				curr_branch = scene[curr_branch].get("Choice").get("Option"+str(selected_desition)).get("Tail") 
 				end_desition()			
@@ -73,6 +75,7 @@ func start(scene_number : String):
 	end_scene()
 	
 func end_scene(): 
+	print(emit_signal("dialogue_ended"))
 	toggle_visibility()
 	is_on_dialogue = false
 	curr_branch = "Branch0"
