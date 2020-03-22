@@ -5,7 +5,6 @@ signal scene_changed()
 var animation_player
 var previous_scene = "Main"
 var disable_interact = false
-var prev_room = ""
 
 func _ready():
 	animation_player = get_node("Player")

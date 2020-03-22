@@ -7,15 +7,18 @@ var enter = false
 
 var gravity = -10
 var velocity = Vector3(0, 0, 0)
-var going_idle = true
 var camera
 var new_area
-var dialog_area = true
+var dialog_area = false
 var interact = false
 var dialog_box
 var prev_room
 var parent
 var char_name
+var animation_player
+var next_animation = "Forward"
+var moved = false
+var idle = false
 
 const SPEED = .8
 const MAX_SPEED = 2
@@ -32,6 +35,7 @@ func _ready():
 	dialog_box = get_node("Dialog")
 	camera = self.get_parent().get_node("Camera").get_global_transform()
 	parent = get_parent()
+	animation_player = get_node("SpriteJugador/AnimationPlayer")
 	
 func _physics_process(delta):
 	var dir = Vector3()
@@ -42,14 +46,30 @@ func _physics_process(delta):
 			elif(dialog_area == true):
 				var new_char = parent.get_node("Characters/"+char_name)
 				dialog_box.start(str(new_char.get_scene()))
+		if(Input.is_action_pressed("move_left")):
+			dir+=-camera.basis[0]
+		if(Input.is_action_pressed("move_right")):
+			dir+=camera.basis[0]
 		if(Input.is_action_pressed("move_fw")):
 			dir+=-camera.basis[2]
 		if(Input.is_action_pressed("move_bw")):
 			dir+=camera.basis[2]
-		if(Input.is_action_pressed("move_left")):
-			dir+=camera.basis[0]
-		if(Input.is_action_pressed("move_right")):
-			dir+=-camera.basis[0]
+		if(Input.is_action_pressed("move_fw")):
+			next_animation = "Forward"
+			idle = false
+		elif(Input.is_action_pressed("move_bw")):
+			next_animation = "Backward"
+			idle = false
+		elif(Input.is_action_pressed("move_left")):
+			next_animation = "Left"
+			idle = false
+		elif(Input.is_action_pressed("move_right")):
+			next_animation = "Right"
+			idle = false
+		else:
+			idle = true
+		if(!idle):
+			animation_player.play(next_animation)
 	elif(dialog_box.is_on_dialogue):
 		if(Input.is_action_just_pressed("interact")):
 			if(dialog_box.is_on_desition):
@@ -84,8 +104,11 @@ func _on_Area_AreaDetection_entered(area):
 	if(area.get_collision_layer_bit(DOORS)):
 		var area_name = area.get_name()
 		if("-" in area.get_name() and SceneChanger.previous_scene != area_name and area_name.find(parent_name.substr(0, 5)) != -1):
+			enter = false
 			SceneChanger.previous_scene = parent_name
 			SceneChanger.continue_room(area_name, SceneChanger.previous_scene)
+		if(SceneChanger.previous_scene == area_name):
+			enter = false
 		else:
 			enter = true
 			dialog_area = false
