@@ -21,7 +21,8 @@ func _physics_process(delta):
 func start_cutscene(scene):
 	dialog.start(scene)
 	yield(dialog, \"dialogue_ended\")
-	SceneChanger.change_scene(\"Vagon1-1\", \"Main\")"
+	SceneChanger.change_scene(\"Vagon1-1\", \"Main\")
+"
 
 [node name="Intro" type="Control"]
 anchor_right = 1.0

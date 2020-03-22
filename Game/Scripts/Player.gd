@@ -5,7 +5,7 @@ signal desition_made
 
 var enter = false
 
-var gravity = -10
+var gravity = -30
 var velocity = Vector3(0, 0, 0)
 var camera
 var new_area
@@ -81,11 +81,10 @@ func _physics_process(delta):
 				dialog_box.select("up")
 			if(Input.is_action_just_pressed("move_bw")):
 				dialog_box.select("down")
-				
+	if(!self.is_on_floor() and !dialog_box.is_on_dialogue):
+		velocity.y = delta * gravity
 	dir.y = 0
 	dir = dir.normalized()
-	if(!self.is_on_floor()):
-		velocity.y = delta * gravity
 	var hv = velocity
 	hv.y = 0
 	var new_pos = dir * SPEED

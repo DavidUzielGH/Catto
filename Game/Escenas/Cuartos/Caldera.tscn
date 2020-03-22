@@ -1,18 +1,19 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Escenas/Cuartos/Vagon3-2.gd" type="Script" id=1]
-[ext_resource path="res://Imagenes/Escenarios/Vagon3-2.png" type="Texture" id=2]
-[ext_resource path="res://Escenas/Characters/Mama.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Imagenes/Escenarios/Caledera.png" type="Texture" id=1]
+[ext_resource path="res://Escenas/Cuartos/Caldera.gd" type="Script" id=2]
 
 [sub_resource type="BoxShape" id=1]
 
 [sub_resource type="BoxShape" id=2]
 
-[node name="Vagon3-2" type="Spatial"]
-script = ExtResource( 1 )
+[sub_resource type="BoxShape" id=3]
+
+[node name="Caldera" type="Spatial"]
+script = ExtResource( 2 )
 
 [node name="Collisions" type="Spatial" parent="."]
-transform = Transform( 0.737, 0, 0, 0, 0.998255, -0.0706178, 0, 0.059045, 1.19391, 0.088, 0, 0.230636 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.407, 0, 0, -0.037 )
 
 [node name="Floor" type="StaticBody" parent="Collisions"]
 transform = Transform( 1.2, 0, 0, 0, 1, 0, 0, 0, 1.44036, 0.1, -0.35, -1.15142 )
@@ -38,7 +39,7 @@ visible = false
 transform = Transform( 0.695785, 0, 0, 0, 1, 0, 0, 0, 1, 0.143604, 0, -0.255175 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Collisions/Wall2"]
-transform = Transform( 1.56651, 0, 0, 0, 1, -4.65661e-10, 0, -3.72529e-09, 0.0666761, -0.382961, -0.188574, 0.109185 )
+transform = Transform( 1.56651, 0, 0, 0, 1, 0, 0, 0, 0.0666761, -0.382961, -0.198434, 0.0214968 )
 shape = SubResource( 2 )
 
 [node name="CSGBox" type="CSGBox" parent="Collisions/Wall2/CollisionShape"]
@@ -64,44 +65,45 @@ shape = SubResource( 2 )
 [node name="CSGBox" type="CSGBox" parent="Collisions/Wall4/CollisionShape"]
 visible = false
 
+[node name="Cosa1" type="StaticBody" parent="Collisions"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Cosa1"]
+transform = Transform( 0.0994752, 0, -0.0328735, 0, 0.158779, 0, 1.24508, 0, 0.0158553, 0.446062, -0.229087, -1.07859 )
+shape = SubResource( 3 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Cosa1/CollisionShape"]
+transform = Transform( 1, 0, 1.49012e-08, 0, 1, 0, 1.19209e-07, 0, 1, 0, 0, 0 )
+visible = false
+
+[node name="Cosa2" type="StaticBody" parent="Collisions"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Collisions/Cosa2"]
+transform = Transform( -0.0435165, 0.000824297, -0.0333813, 0.00030518, 0.158777, 0.000172865, 1.26433, -6.00912e-05, -0.00693624, -0.370748, -0.229087, -1.07859 )
+shape = SubResource( 3 )
+
+[node name="CSGBox" type="CSGBox" parent="Collisions/Cosa2/CollisionShape"]
+transform = Transform( 1, 0, 1.49012e-08, 0, 1, 0, 1.19209e-07, 0, 1, 0, 0, 0 )
+visible = false
+
 [node name="Camera" type="Camera" parent="."]
 fov = 71.7
 
 [node name="Sprite3D" type="Sprite3D" parent="Camera"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.795 )
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
 
 [node name="DoorsSpawns" type="Node" parent="."]
 
-[node name="Vagon3-1" type="Area" parent="DoorsSpawns"]
+[node name="CosaNegraAbajo" type="Area" parent="DoorsSpawns"]
 collision_layer = 8
 collision_mask = 8
 
-[node name="CollisionShape" type="CollisionShape" parent="DoorsSpawns/Vagon3-1"]
-transform = Transform( 0.803296, 0, 0, 0, 0.998255, -0.00561401, 0, 0.059045, 0.0949143, -0.00254378, -0.178413, -0.275329 )
+[node name="CollisionShape" type="CollisionShape" parent="DoorsSpawns/CosaNegraAbajo"]
+transform = Transform( 1.08995, 0, 0, 0, 1, 0, 0, 0, 0.0271372, -0.122855, -0.198434, -0.195007 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Vagon3-1/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/CosaNegraAbajo/CollisionShape"]
 visible = false
 
-[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Vagon3-1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.221429, -0.311394 )
-
-[node name="Vagon3-3" type="Area" parent="DoorsSpawns"]
-collision_layer = 8
-collision_mask = 8
-
-[node name="CollisionShape2" type="CollisionShape" parent="DoorsSpawns/Vagon3-3"]
-transform = Transform( 0.808573, 0, 0, 0, 0.998255, -0.00470852, 0, 0.059045, 0.0796055, 0.0448537, -0.0484816, -2.14598 )
-shape = SubResource( 2 )
-
-[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Vagon3-3/CollisionShape2"]
-visible = false
-
-[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Vagon3-3"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.226612, -2.14072 )
-
-[node name="Characters" type="Node" parent="."]
-
-[node name="Mama" parent="Characters" instance=ExtResource( 3 )]
-transform = Transform( 0.999026, 0, 0, 0, 0.999026, 6.01096e-06, 0, -1.40116e-05, 0.428582, -0.63, -0.239, -0.867 )
+[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/CosaNegraAbajo"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.328751, -0.198669 )
