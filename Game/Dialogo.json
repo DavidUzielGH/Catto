@@ -66,5 +66,50 @@
     "Branch1":{
       "Line":{"name":"", "portrait":"", "side":"", "dialogue":""}
     }
+  },
+  "Scene3":{
+    "Branch0":{
+      "Line":{"name":"", "portrait":"", "side":"left", "dialogue":"A donde quieres ir?"},
+      "Choice":{
+        "Option0":{
+          "Head":"Techo",
+          "Tail":"Branch1"
+        },
+	"Option1":{
+	  "Head":"Siguiente Vagon",
+	  "Tail":"Branch2"
+	},
+	"Option2":{
+	  "Head":"Volver",
+	  "Tail":"Branch3"
+	}
+      }
+    },
+    "Branch1":{
+      "Event":{
+        "Name":"Transition",
+        "Level":"0"
+      },
+	"End":true
+    },
+    "Branch2":{
+      "Event":{
+        "Name":"Transition",
+        "Level":"1"
+      },
+	"End":true
+    },
+    "Branch3":{
+      "Event":{
+        "Name":"Transition",
+        "Level":"2"
+      },
+      "End":true
+    }
+  },
+  "Scene4":{
+    "Branch0":{
+      
+    }
   }
 }
