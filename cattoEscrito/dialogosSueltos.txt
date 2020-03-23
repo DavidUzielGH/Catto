@@ -69,7 +69,7 @@ dialogos sueltos
 				maquinista: [] well i haven't seen him pass through here, you should check the roof
 				[] maybe he went up trying to see what his dad did
 
-				(efectivamente va al techo, nota marcas chicas de patas y otras grandes, hubo algun tipo de confrontacion, y solo dos van en direccion del cuarto de maquinas)
+				(efectivamente va al techo, nota marcas chicas de patas y otras grandes, hubo algun tipo de confrontacion, y solo dos van en direccion del cuarto de maquinas, asi sabes que es ese men)
 
 			----(hijo perdido(sospechas de este vato))----
 				maquinista: [] i'm surprised you didn't die on the roof
