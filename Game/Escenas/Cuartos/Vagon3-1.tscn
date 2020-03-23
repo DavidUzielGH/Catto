@@ -72,18 +72,18 @@ texture = ExtResource( 1 )
 
 [node name="DoorsSpawns" type="Node" parent="."]
 
-[node name="CosaNegraAbajo" type="Area" parent="DoorsSpawns"]
+[node name="Vagon1-2" type="Area" parent="DoorsSpawns"]
 collision_layer = 8
 collision_mask = 8
 
-[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/CosaNegraAbajo"]
+[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Vagon1-2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.836723, -0.333544, -0.800329 )
 
-[node name="CollisionShape" type="CollisionShape" parent="DoorsSpawns/CosaNegraAbajo"]
+[node name="CollisionShape" type="CollisionShape" parent="DoorsSpawns/Vagon1-2"]
 transform = Transform( 0.0673804, 0, 0, 0, 1, 0, 0, 0, 0.245286, 0.883773, 0, -0.800993 )
 shape = SubResource( 2 )
 
-[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/CosaNegraAbajo/CollisionShape"]
+[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Vagon1-2/CollisionShape"]
 visible = false
 
 [node name="Vagon3-2" type="Area" parent="DoorsSpawns"]
