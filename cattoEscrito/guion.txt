@@ -33,5 +33,21 @@ Intro
 
 		snowball: [cara feliz] "Aye, this old train has watched over me well
 
-Empiezo en el tren
+final
+	#en el tren, el prota ya no esta triste
+
+		fifi: [cara neutral] did that really happen mister snowballs?
+
+		snowball: [cara feliz] of course it did
+		[cara enojada] are you calling me a liar?
+
+		fifi: [cara neutral] i'm just saying that maybe your memory is a bit detirioated
+		[cara feliz] just like this train you love so much
+
+		snowball: [cara feliz] hahaha
+
+		fifi: [cara feliz] hahaha
+
+		(se va a negro)
+		fin
 	
