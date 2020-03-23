@@ -1,0 +1,129 @@
+{
+  "Scene20":{
+    "Branch0":{
+      "Line0":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Mama says that she wishes the train would just start already"},
+      "Choice":{
+	"Option0":{
+	  "Head":"And what do you wish for?",
+	  "Tail":"Branch1"
+	},
+	"Option1":{
+	  "Head":"Don't we all son",
+	  "Tail":"Branch2"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Child", "portrait":"trist", "side":"right", "dialogue":"I'm just happy to be on the train my daddy worked on"},
+      "End":true
+    }, 
+    "Branch2":{ 
+      "End":true
+    }
+  },
+
+  "Scene21":{
+    "Branch0":{
+      "Line0":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Hi!"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"What's your deal son?"},
+      "Line2":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I like trains"},
+      "Line3":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Do you now? I work on the railway myself"},
+      "Line4":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"REALLY!!"},
+      "Line5":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"I'd love to work on a train when i'm older, just like my daddy did"},
+      "Line6":{"name":"Snowball", "portrait":"sorprendido", "side":"left", "dialogue":"what did your daddy do?"},
+      "Line7":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"he was super brave and cool, he would run on the roofs of trains to brake them, so they wouldn't crash"},
+      "Line8":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"his job was very important, i bet i could do it too, just wait and see when i'm older"},
+      "Line9":{"name":"Snowball", "portrait":"triste", "side":"left", "dialogue":"(He's a brakeman, poor guy)"},
+      "Choice":{
+  "Option0":{
+    "Head":"And where's your dad now? He sounds cool",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"Hey, how old are you?",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"Oh, umm..."},      
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"10 and a half! Why?"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Yep, your a wee lad still, your in perfect age to start working if you really want to"},
+      "Line2":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"my mama says i'm still to small for that"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"that you are"},      
+      "End":true
+    }
+  },
+
+  "Scene22":{
+    "Branch0":{
+      "Line":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"hi mister old cat sir, mama says you look nice"},
+      "Line":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Tell her that so does she, but guess what son"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"What?"},
+      "Choice":{
+  "Option0":{
+    "Head":"I recently made an new friend",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"I made you an appointment",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"really? who is he?"},
+      "Line":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"a future big name writer, he wants you to be the first to hear his stories"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"REALLY!? Let's get going then"},
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"yeah right, with whom if i may ask?"},
+      "Line":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"with a future award winning novelist, and right now THE best story writer ever"},
+      "Line":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"he wants you to be the first boy, girl, man, woman, or thing ever to hear his new stories"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"let's go then!!"},
+
+      "End":true
+    }
+  },
+
+  "Scene23":{
+    "Branch0":{
+      "Line0":{"name":"Snowball", "portrait":"enojado", "side":"left", "dialogue":"that piece of garbage just jumped from the train and left us downhill to crash"},
+      "Line1":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"what are we going to do?"},
+      "Line2":{"name":"Snowball", "portrait":"sorprendido", "side":"left", "dialogue":"we're gonna have to brake it"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"i'll need your help, you stop half and i'll stop the other half"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"we'll need to do it quickly, let's go"},
+    }, 
+  },
+
+  "Scene24":{
+    "Branch0":{
+      "Line":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":""},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":""},
+      "Choice":{
+  "Option0":{
+    "Head":"No, of course not",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"Help me with your mama and i'll consider us even",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Sure thing"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I don't think i need to do much"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"She's already very much fond of you"},
+      "End":true
+    }
+  }
+
+}
