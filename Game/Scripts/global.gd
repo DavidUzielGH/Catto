@@ -1,6 +1,6 @@
 extends Node
 
-onready var char_level = {"Maria":0, "Fifi":0, "Niño":0, "Escritor":0, "Maquinista":0, "Transition":0}
+onready var char_level = {"Widow":7, "Child":20, "Writer":25, "Machinist":3, "Transition":0}
 onready var room_level = {"Vagon1":0, "Techo1":0, "CosaNegra":0, "Techo3":0, "Vagon3":0, "Grua":0, "TechoGrua":0, "Techo4":0, "Caldera":0}
 onready var cut_level = 0
 

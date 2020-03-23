@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Escenas/Cuartos/Vagon1-2.gd" type="Script" id=1]
 [ext_resource path="res://Imagenes/Escenarios/Vagon1-2.png" type="Texture" id=2]
+[ext_resource path="res://Escenas/Characters/Writer.tscn" type="PackedScene" id=3]
 
 [sub_resource type="BoxShape" id=1]
 
@@ -87,3 +88,6 @@ visible = false
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.243298, -1.97535 )
 
 [node name="Characters" type="Node" parent="."]
+
+[node name="Writer" parent="Characters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.429, 0.410547, 0.156993, -1.41832 )

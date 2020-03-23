@@ -20,18 +20,18 @@
   },
   "Scene2":{
     "Branch0":{
-      "Line":{"name":"", "portrait":"", "side":"left", "dialogue":"A donde quieres ir?"},
+      "Line":{"name":"", "portrait":"", "side":"left", "dialogue":"Where to?"},
       "Choice":{
         "Option0":{
-          "Head":"Techo",
+          "Head":"To the roof",
           "Tail":"Branch1"
         },
 	"Option1":{
-	  "Head":"Siguiente Vagon",
+	  "Head":"Next wagon",
 	  "Tail":"Branch2"
 	},
 	"Option2":{
-	  "Head":"Volver",
+	  "Head":"Go bak",
 	  "Tail":"Branch3"
 	}
       }
@@ -73,9 +73,9 @@
       }
     },
     "Branch1":{
-      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Isn't the train supposed to be on by now?"},
-      "Line1":{"name":"Machinist", "portrait":"enojado", "side":"left", "dialogue":"I was just checking on the passengers, we'll be out shortly"},
-      "Line2":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Anything else?"},
+      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Isn't the train supposed to be on by now?"},
+      "Line1":{"name":"Machinist", "portrait":"enojado", "side":"rigt", "dialogue":"I was just checking on the passengers, we'll be out shortly"},
+      "Line2":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"Anything else?"},
       "Choice":{
         "Option0":{
           "Head":"End talk",
@@ -88,17 +88,21 @@
       }
     },
     "Branch1.1":{
+    	"Event":{
+    		"Name":"Machinist",
+    		"Level":"31"
+    	},
       "End":true
     },
     "Branch2":{
-      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I used to be a machinist myself"},
-      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Used to? Now what do you do?"},
-      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I'm on my way to make a new railway, maybe your train will ride it"},
-      "Line3":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"This here train is on it's last voyage, after this it's off to the scrapyard"},
-      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"This here train is on it's last voyage, after this it's off to the scrapyard "},
-      "Line5":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"Prospective future workers?"},
-      "Line6":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers"},
-      "Line7":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers"},
+      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"I used to be a machinist myself"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"Used to? Now what do you do?"},
+      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"I'm on my way to make a new railway, maybe your train will ride it"},
+      "Line3":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"This here train is on it's last voyage, after this it's off to the scrapyard"},
+      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"This here train is on it's last voyage, after this it's off to the scrapyard "},
+      "Line5":{"name":"Snowball", "portrait":"dudoso", "side":"left", "dialogue":"Prospective future workers?"},
+      "Line6":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers"},
+      "Line7":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers"},
       "Choice":{
         "Option0":{
           "Head":"That sound terrible!",
@@ -118,6 +122,10 @@
       "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"When the train finally got to central station they just gave me an uniform and told me I was theirs"},
       "Line5":{"name":"Snowball", "portrait":"sorpresa", "side":"right", "dialogue":"Your poor mother, she must have been devestaded "},
       "Line6":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Either they told her i was dead, or she was happy she had one less mouth to feed, because i haven't seen her since "},
+      "Event":{
+      	"Name":"Machinist",
+      	"Level":"31"
+      },
       "End":true
     },
     "Branch4":{
@@ -128,12 +136,22 @@
       "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"When the train finally got to central station they just gave me an uniform and told me I was theirs"},
       "Line5":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Did your mother just not care"},
       "Line6":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Either they told her I was dead, or she was happy she had one less mouth to feed, because I haven't seen her since"},
+      "Event":{
+      	"Name":"Machinist",
+      	"Level":"31"
+      }, 
       "End":true
     }
   },
+  "Scene31":{
+  	"Branch0":{
+  		"Line0":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"I'm busy pal, come at another time"},
+  		"End":true
+  	}
+  },
   "Scene4":{
     "Branch0":{
-      "Line0":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"what now?"},
+      "Line0":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"What now?"},
       "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I took a child with a writer on board"},
       "Line2":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"to listen to some stories since he was a bit sad "},
       "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"just passing the time now "},
@@ -190,7 +208,7 @@
   },
   "Scene7":{
     "Branch0":{
-      "Line0":{"name":"Widow", "portrait":"neutral", "side":"right", "dialogue":"This train sure is taking it's time isn't it?"},
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"This train sure is taking it's time isn't it?"},
       "Choice":{
         "Option0":{
           "Head":"I imagine the train has it's reasons",
@@ -209,10 +227,11 @@
   },
   "Scene8":{
     "Branch0":{
-      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":""},
-      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"It's better than the roof"},
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Well, they didn't lie when they said that this isn't a luxury cabin"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"At least it's better than the roof"},
       "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"I guess it is"},
-      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On my way to the central station, going to cash some money my husbands owed, pay rent, pay my sons college"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"And what are you doing in this first class transport"},
+      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On my way to the central station, going to cash some money my husband was owed, pay rent, pay for my sons college"},
       "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Maybe get some new shoes with it"},
       "Line5":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"He worked for the company then?"},
       "Line6":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On this very train, he was a brakeman for 35 years"},
@@ -220,22 +239,31 @@
         "Option0":{
           "Head":"Why didn't he ever switch jobs?",
           "Tail":"Branch2"
-        },
-	"Option1":{
-	  "Head":"He must've had a death wish, or is a really brave man",
-	  "Tail":"Branch3"
-	}
-      }
+		 },
+		"Option1":{
+		  "Head":"He must've had a death wish, or is a really brave man",
+		  "Tail":"Branch3"
+		}
+	  }
     },
     "Branch2":{
       "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He didn't want anybody else to risk life and limb like that"},
       "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"Like he did"},
+      "Event":{
+      	"Name":"Widow",
+      	"Level":"91"
+      },
       "End":true
     },
     "Branch3":{
       "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He is an extremely brave man"},
       "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"..."},
+      "Event":{
+      	"Name":"Widow",
+      	"Level":"91"
+      },
       "End":true
+
     }
   },
   "Scene9":{
@@ -272,11 +300,20 @@
     },
     "Branch2":{
       "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He didn't want anybody else to risk life and limb like that"},
-      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"Like he did"}
+      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"Like he did"},
+      "Event":{
+      	"Name":"Widow",
+      	"Level":"91"
+      },
+      "End":true
     },
     "Branch3":{
       "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He is an extremely brave man"},
       "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"..."},
+      "Event":{
+      	"Name":"Widow",
+      	"Level":"91"
+      },
       "End":true
     },
     "Branch4":{
@@ -286,8 +323,18 @@
       "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He was and still is"},
       "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He never cashed that debt with us in mind"},
       "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He wanted to leave something behind in case anything ever happend to him"},
+      "Event":{
+      	"Name":"Widow",
+      	"Level":"91"
+      },
       "End":true
     }
+  },
+  "Scene91":{
+  	"Branch0":{
+  		"Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"..."},
+  		"End":true
+  	}
   },
   "Scene10":{
     "Branch0":{
@@ -377,5 +424,284 @@
       "Line10":{"name":"Widow", "portrait":"feliz", "side":"left", "dialogue":"Please do! Haha"},
       "End":true
     }
+  },
+  "Scene20":{
+    "Branch0":{
+      "Line0":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Mama says that she wishes the train would just start already"},
+      "Choice":{
+		"Option0":{
+		  "Head":"And what do you wish for?",
+		  "Tail":"Branch1"
+		},
+		"Option1":{
+		  "Head":"Don't we all son",
+		  "Tail":"Branch2"
+		}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I'm just happy to be on the train my daddy worked on"},
+      "End":true
+    }, 
+    "Branch2":{ 
+      "End":true
+    }
+  },
+
+  "Scene21":{
+    "Branch0":{
+      "Line0":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Hi!"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"What's your deal son?"},
+      "Line2":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I like trains and stories, and stories about trains"},
+      "Line3":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Do you now? I work on the railway myself"},
+      "Line4":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"REALLY!!"},
+      "Line5":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"I'd love to work on a train when i'm older, just like my daddy did"},
+      "Line6":{"name":"Snowball", "portrait":"sorpresa", "side":"left", "dialogue":"what did your daddy do?"},
+      "Line7":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"he was super brave and cool, he would run on the roofs of trains to brake them, so they wouldn't crash"},
+      "Line8":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"his job was very important, i bet i could do it too, just wait and see when i'm older"},
+      "Line9":{"name":"Snowball", "portrait":"triste", "side":"left", "dialogue":"(He's a brakeman, poor guy)"},
+      "Choice":{
+		"Option0":{
+		"Head":"And where's your dad now? He sounds cool",
+		"Tail":"Branch1"
+		},
+		"Option1":{
+		"Head":"Hey, how old are you?",
+		"Tail":"Branch2"
+		}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"Oh, umm..."}, 
+      "Event":{
+      	"Name":"Child",
+      	"Level":"211"
+      },     
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"10 and a half! Why?"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Yep, your a wee lad still, your in perfect age to start working if you really want to"},
+      "Line2":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"my mama says i'm still to small for that"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"that you are"},      
+      "Event":{
+      	"Name":"Child",
+      	"Level":"211"
+      },    
+      "End":true
+    }
+  },
+  "Scene211":{
+  	"Branch0":{
+  		"Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"Trains are cool"},
+  		"End":true
+  	}
+  },
+  "Scene22":{
+    "Branch0":{
+      "Line":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"hi mister old cat sir, mama says you look nice"},
+      "Line":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Tell her that so does she, but guess what son"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"What?"},
+      "Choice":{
+		"Option0":{
+		    "Head":"I recently made an new friend",
+		    "Tail":"Branch1"
+		},
+		"Option1":{
+			"Head":"I made you an appointment",
+		    "Tail":"Branch2"
+			}	
+      }
+    },
+    "Branch1":{
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"really? who is he?"},
+      "Line":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"a future big name writer, he wants you to be the first to hear his stories"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"REALLY!? Let's get going then"},
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"yeah right, with whom if i may ask?"},
+      "Line":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"with a future award winning novelist, and right now THE best story writer ever"},
+      "Line":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"he wants you to be the first boy, girl, man, woman, or thing ever to hear his new stories"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"let's go then!!"},
+
+      "End":true
+    }
+  },
+
+  "Scene23":{
+    "Branch0":{
+      "Line0":{"name":"Snowball", "portrait":"enojado", "side":"left", "dialogue":"that piece of garbage just jumped from the train and left us downhill to crash"},
+      "Line1":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"what are we going to do?"},
+      "Line2":{"name":"Snowball", "portrait":"sorprendido", "side":"left", "dialogue":"we're gonna have to brake it"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"i'll need your help, you stop half and i'll stop the other half"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"we'll need to do it quickly, let's go"},
+    }, 
+  },
+
+  "Scene24":{
+    "Branch0":{
+      "Line":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":""},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":""},
+      "Choice":{
+  "Option0":{
+    "Head":"No, of course not",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"Help me with your mama and i'll consider us even",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Sure thing"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I don't think I need to do much"},
+      "Line":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"She's already very fond of you"},
+      "End":true
+    }
+  },
+  "Scene25":{
+    "Branch0":{
+      "Line0":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"When will this infernal train finally start moving?"},
+      "Line1":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"Someone should go wake up the man who makes the train go choo choo"},
+      "Choice":{
+  "Option0":{
+    "Head":"I'll wait with you right here",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"I'm on my way over there right now",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"I mean someone without depression"},      
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line0":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"you sir are a true hero, i'll write my next story about you"},
+      "Line1":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"it'll be a homage so wonderfull that all my readers will know your name!"},
+      "Line2":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"try and come back after"},
+      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"I'll sure try"},
+      "End":true
+    }
+  },
+
+  "Scene26":{
+    "Branch0":{
+	  "Line0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Well hello everyday hero"},
+	  "Line1":{"name":"Snowball", "portrait":"triste", "side":"left", "dialogue":"So your a writer? have i read anything of yours?"},
+	  "Line2":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I don't think so, unless you really like childrens books"},
+	  "Line3":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"But i'm on my way of writing my novel, so be sure to read it when it comes out"},
+	  "Line4":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"I'll be sure to do that"},
+	  "Line5":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"But you write childrens books?"},
+	  "Line6":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I have to put food on the table somehow while i write my novel"},
+	  "Line7":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"If that means humiliating myself by writing for children, then by the grace of God it shall be"},
+	  "Line8":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"So you don't like what you do?"},
+	  "Line9":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I despise it"}, 
+	  "Event":{
+	  	"Name":"Writer",
+	  	"Level":"261"
+	  },
+	  "End":true
+    },
+  },
+  "Scene261":{
+  	"Branch0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"..."},
+  	"End":true
+  },
+  "Scene27":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Hey hero"}, 
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Hello there, you know, there's a kid on board who seems nice, and really likes trains"},
+      "Line2":{"name":"Snowball", "portrait":"triste", "side":"left", "dialogue":"He's quite sad looking right now, can i bring him over? you tell him a story and cheer him up, that sort of thing"},
+      "Line3":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I despise myself for what i do for a living, i should be writing novels "},
+      "Line4":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I should be respected by literary scholars around the globe"},
+      "Line5":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"But instead i write books for children because my novels don't circulate"},
+      "Line6":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"And now you want me to be some sort of jester for a child"},
+      "Choice":{
+  "Option0":{
+    "Head":"Don't think of it as that, consider it more focus group of your future readers",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"Come on man, he's like REALLY sad",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{     
+      "Line":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Feed him some simplified ideas and see what happens"},
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"Hmm"},
+      "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"..."},
+      "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Fine, i'll test some stuff with him, send him over when ever"},
+      "End":true
+    }, 
+    "Branch2":{    
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"So am i, and nobody gives me sympathy, only ridicule"},
+      "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"But fine, i'll help the kid out"},
+      "End":true
+    }
+  },
+	"Scene271":{
+	  	"Branch0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"..."},
+	  	"End":true
+	  },
+  "Scene28":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Well look at that, you did bring him"},
+      "Line1":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"You ready to listen to my genius?"},
+      "Line2":{"name":"Child", "portrait":"neutral", "side":"left", "dialogue":"I think i will be the judge of that"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Are you good here little man?"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I can stay if you want"},
+      "Line5":{"name":"Child", "portrait":"neutral", "side":"left", "dialogue":"I'm good, you can go do other stuff if you want"},
+      "Line6":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"You can take care of him right?"},
+      "Line7":{"name":"Writer", "portrait":"neutral", "side":"left", "dialogue":"Of course, i'll just send him out the door and in your direction once i'm gone"},
+      "Line8":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"So be it"},
+    },
+  },
+
+  "Scene29":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I really really liked that young man"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Quite a smart lad isn't he?"},
+      "Line2":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"That he sure is"},
+      "Line3":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Anything else you needed?"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Oh i just came for the boy, his mother started to get nervous"},
+      "Line5":{"name":"Writer", "portrait":"sorpresa", "side":"right", "dialogue":"How isn't he there yet?"},
+      "Line6":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"I sent him off a while ago"},
+      "Line7":{"name":"Snowball", "portrait":"enojado", "side":"left", "dialogue":"You lost the boy?"},
+      "Line8":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"His mother will have my head"},
+      "Line9":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I saw him leave my wagon, after that i'm lost"},
+      "Choice":{
+  "Option0":{
+    "Head":"I'll have to tell his mother, maybe she has an idea of were he could be",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"His mother can't know this, i'll have to hurry and make something up",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{     
+      "End":true
+    }, 
+    "Branch2":{    
+      "End":true
+    }
+  },
+
+  "Scene30":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I guess now your a real hero"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Not even close, but you still owe a story to my name, make it interisting now"},
+      "Line2":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I'll try and do you justice"},
+    },
   }
 }

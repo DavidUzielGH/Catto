@@ -7,7 +7,7 @@ var dialog
 
 func _ready():
 	dialog = get_node("Dialog")
-	start_cutscene("3");
+	start_cutscene("2");
 	yield(dialog, "dialogue_ended")
 	if(global.get_character_scene_level("Transition") == 1):
 		SceneChanger.change_scene("Techo", "Transition")

@@ -3,7 +3,7 @@
 [ext_resource path="res://Imagenes/Personajes/maquinista.png" type="Texture" id=2]
 [ext_resource path="res://Imagenes/Jugador/Shadow.png" type="Texture" id=3]
 
-[sub_resource type="GDScript" id=3]
+[sub_resource type="GDScript" id=1]
 script/source = "extends \"res://Scripts/Character.gd\"
 
 
@@ -11,33 +11,39 @@ func _ready():
 	set_scene(1)
 
 func _physics_process(delta):
-	pass
+	var machinist = global.get_character_scene_level(\"Machinist\")
+	var widow = global.get_character_scene_level(\"Widow\")
+	if(machinist == 3):
+		set_scene(3)
+	elif(machinist == 3.1):
+		set_scene(3.1)
+
 
 "
 
-[sub_resource type="CapsuleShape" id=1]
+[sub_resource type="CapsuleShape" id=2]
 
-[sub_resource type="BoxShape" id=2]
+[sub_resource type="BoxShape" id=3]
 
-[node name="Maquinista" type="Spatial"]
+[node name="Machinist" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.429, 0, 0, 0 )
-script = SubResource( 3 )
+script = SubResource( 1 )
 
-[node name="Mama" type="Area" parent="."]
+[node name="Machinist" type="Area" parent="."]
 transform = Transform( 1.00909, 0, 0, 0, 0.873223, 0, 0, 0, 1.22483, 0, 0.0293097, -0.00426649 )
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape" type="CollisionShape" parent="Mama"]
+[node name="CollisionShape" type="CollisionShape" parent="Machinist"]
 transform = Transform( 0.155201, 0, 0, 0, 0.155201, 0, 0, 0, 0.155201, 0, 0, 0.0332594 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 transform = Transform( 1.00909, 0, 0, 0, 0.873223, 0, 0, 0, 1.22483, 0, 0.0293097, -0.00426649 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 0.0867362, 0, 0, 0, 0.152, 0, 0, 0, 0.065245, 0, 0, 0 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform( 0.0842328, 0, 0, 0, 0.0842328, 0, 0, 0, 0.00154556, 0, 0.0259748, 0.0242665 )

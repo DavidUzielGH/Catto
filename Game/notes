@@ -1,0 +1,22 @@
+3 - 6 Machinist
+7 - 15 Widow
+20 - 24 Child
+25 >> Writer 
+
+if(machinist == 3) 
+	Writer = 25
+	Widow = 7
+	Machinist = 3 > 31
+	Child = 20
+if(machinist == 31):
+	Writer = 26 > 261
+	Widow = 8 > 9.1
+	Child = 21 > 211
+
+
+if(machinist == 31 and Child == 211)
+	Widow = 9 > 91
+	Writer = 27 > 271
+
+if(Writer == 271):
+	Child = 22 > 211

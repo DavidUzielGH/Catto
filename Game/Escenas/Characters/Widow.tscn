@@ -1,34 +1,23 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Imagenes/Personajes/niño.png" type="Texture" id=2]
+[ext_resource path="res://Escenas/Characters/Widow.gd" type="Script" id=1]
+[ext_resource path="res://Imagenes/Personajes/viuda.png" type="Texture" id=2]
 [ext_resource path="res://Imagenes/Jugador/Shadow.png" type="Texture" id=3]
-
-[sub_resource type="GDScript" id=3]
-script/source = "extends \"res://Scripts/Character.gd\"
-
-
-func _ready():
-	set_scene(1)
-
-func _physics_process(delta):
-	pass
-
-"
 
 [sub_resource type="CapsuleShape" id=1]
 
 [sub_resource type="BoxShape" id=2]
 
-[node name="Niño" type="Spatial"]
+[node name="Widow" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.429, 0, 0, 0 )
-script = SubResource( 3 )
+script = ExtResource( 1 )
 
-[node name="Mama" type="Area" parent="."]
+[node name="Widow" type="Area" parent="."]
 transform = Transform( 1.00909, 0, 0, 0, 0.873223, 0, 0, 0, 1.22483, 0, 0.0293097, -0.00426649 )
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape" type="CollisionShape" parent="Mama"]
+[node name="CollisionShape" type="CollisionShape" parent="Widow"]
 transform = Transform( 0.155201, 0, 0, 0, 0.155201, 0, 0, 0, 0.155201, 0, 0, 0 )
 shape = SubResource( 1 )
 
@@ -44,6 +33,6 @@ transform = Transform( 0.0842328, 0, 0, 0, 0.0842328, 0, 0, 0, 0.00154556, 0, 0.
 texture = ExtResource( 2 )
 
 [node name="Sombra" type="Sprite3D" parent="."]
-transform = Transform( 0.0270667, 0, 0, 0, -0.00280844, -0.00695904, 0, 0.0343453, -0.00100469, -0.0193216, -0.155, -0.207531 )
+transform = Transform( 0.0270667, 0, 0, 0, -0.00280844, -0.00695904, 0, 0.0343453, -0.00100469, -0.0524943, -0.155, -0.207531 )
 opacity = 0.5
 texture = ExtResource( 3 )
