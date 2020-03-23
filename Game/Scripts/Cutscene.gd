@@ -11,8 +11,6 @@ func _ready():
 func _physics_process(delta):
 	if(Input.is_action_just_pressed("interact")):
 		emit_signal("next_pressed");
-	if(Input.is_action_just_pressed("move_fw")):
-		
 	
 func start_cutscene(scene):
 	dialog.start(scene)

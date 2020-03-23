@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Vagon4-1.png-221aebee00b4bf3ec40dfebda025217e.s3tc.stex"
-path.etc2="res://.import/Vagon4-1.png-221aebee00b4bf3ec40dfebda025217e.etc2.stex"
+path.s3tc="res://.import/maquinista.png-81a3098c24ef567d088ef4eb73569ab2.s3tc.stex"
+path.etc2="res://.import/maquinista.png-81a3098c24ef567d088ef4eb73569ab2.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Imagenes/Escenarios/Vagon4-1.png"
-dest_files=[ "res://.import/Vagon4-1.png-221aebee00b4bf3ec40dfebda025217e.s3tc.stex", "res://.import/Vagon4-1.png-221aebee00b4bf3ec40dfebda025217e.etc2.stex" ]
+source_file="res://Imagenes/Personajes/maquinista.png"
+dest_files=[ "res://.import/maquinista.png-81a3098c24ef567d088ef4eb73569ab2.s3tc.stex", "res://.import/maquinista.png-81a3098c24ef567d088ef4eb73569ab2.etc2.stex" ]
 
 [params]
 

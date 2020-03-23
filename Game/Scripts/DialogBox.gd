@@ -19,7 +19,7 @@ var visible = false
 var parent
 var curr_branch = "Branch0"
 var desition
-var selected_desition = 1
+var selected_desition = 0
 var desition_texts = {1:"", 2:"", 3:"", 4:""}
 const LEFT = "left"
 const RIGHT = "right"
@@ -130,4 +130,4 @@ func play_anim(number):
 func toggle_visibility():
 	visible = !visible
 	control.set_visible(visible)
-
+	

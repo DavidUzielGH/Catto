@@ -1,0 +1,37 @@
+intro guion
+
+label		cosa
+
+fifi		Prota
+snowball	vejestorio
+
+Intro
+	#En el parque, el prota esta triste.
+
+		fifi: [cara triste] my school is the only one that isn't off because of the cuarintine
+		fifi: [cara enojada] screw them, there are already over a hundred dead in my state alone. i don't want to be a fucking statistic.
+		fifi: [cara sorprendida] But i'll probably lose some classes
+		fifi: [cara neutral] i just need to take my mind off these things, i'll go with old man snowball, he always clears my mind up
+	
+		#va hacia el tren por los rieles
+		#llega al tren
+
+		fifi: [cara neutral] "SNOWBALLS!!" 
+
+		snowball: [cara neutral] "I hear you"
+
+		fifi: [cara neutral] "OLD MAN SNOWBALLS!!!!!!""
+
+		snowball: [cara neutral] "I HEARD YOU!"
+
+		fifi: [cara neutral] "hi mr snowballs"
+
+		snowball: [cara neutral] "well hello fifi, What brings you here so early, usually you don't come till late in the evening"
+
+		fifi: [cara triste] "I didn't feel up for school today"
+		fifi: [cara neutral] "i wanted to finally hear the story about how you met your baby here"
+
+		snowball: [cara feliz] "Aye, this old train has watched over me well
+
+Empiezo en el tren
+	
