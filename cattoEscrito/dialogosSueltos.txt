@@ -1,0 +1,377 @@
+dialogos sueltos
+	
+	dialogos con el maquinista
+		----Hablarle cuando te piden ir a recordarle que prenda el tren----
+			maquinista: [cara enojada] What do you want?
+
+			opcion 0:
+				snowball: [cara neutral] isn't the train supposed to be on by now?
+				maquinista: [cara enojada] i was just checking on the passengers, we'll be out shortly
+				[cara neutral] anything else?
+
+				opcion 0.0:
+					terminar platica con el men y arranca el tren
+
+				opcion 0.1: 
+					ver opcion 1
+
+			opcion 1:
+				snowball: [cara neutral] I used to be a machinist myself 
+				maquinista: [cara neutral] used to? now what do you do?
+				snowball: [] I'm on my way to make a new railway, maybe your train will ride it
+				maquinista: [] This here train is on it's last voyage, after this it's off to the scrapyard
+				maquinista: [] And all it's workers and any prospective future workers will be given new charges
+				snowball: [] prospective future workers?
+				maquinista: [] sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers 
+				maquinista: [] the company just gives them a job with a high mortality rate and low pay then try to forget about them.
+
+				opcion 1.0:
+					snowball: [cara enojada] that sounds horrible!!
+					maquinista: [] yep, but you can change jobs after a while, i was a brakeman for decades before i became a machinist
+					snowball: [cara triste] you where an easy faller?, what happend?
+					maquinista: [] i liked trains, and got lost on a train without my mama when i was a wee lad
+					maquinista: [] when the train finally got to central station they just gave me a uniform and told me i was theirs
+					snowball: [] your poor mother, she must have been devestaded
+					maquinista: [] either they told her i was dead, or she was happy she had one less mouth to feed, because i haven't seen her since
+
+				opcion 1.1:
+					snowball: [] How does one get a job like this?
+					maquinista: [] Just do what i did
+					snowball: [] what happend with you?
+					maquinista: [] i liked trains, and got lost on a train without my mama when i was a wee lad
+					maquinista: [] when the train finally got to central station they just gave me a uniform and told me i was theirs now
+					snowball: [] did your mother just not care?
+					maquinista: [] either they told her i was dead, or she was happy she had one less mouth to feed, because i haven't seen her since
+
+			arranca el tren	
+
+			----(tren en movimiento)----
+				maquinista: [] you really shouldn't be back here son 
+				[] it's quite dangerous to even come here, much less be here 
+				[] it's easy to get stuck, or lost
+				[cara feliz] and you know what happens to people who stay on the train like that
+
+			----(el hijo esta escuchando cuentos)----
+				maquinista: [] what now? 
+				snowball: [] i took i child with a writer thats onboard 
+				[] to listen to some stories since he was a bit sad
+				[] just passing the time now
+				maquinista: [] a young boy?
+				snowball: [] about 10 and a half
+				maquinista: [cara feliz] aye, he's a wee lad
+				[] well you should get going, it's not safe over here
+
+			----(hijo perdido(no sabes que fue el))----
+				maquinista: [] what are you doing here?
+				[] you already know it's dangerous
+				snowball: [] have you seen a boy?
+				[] we've misplaced him and i said i would be responsible for his safety
+				maquinista: [] well i haven't seen him pass through here, you should check the roof
+				[] maybe he went up trying to see what his dad did
+
+				(efectivamente va al techo, nota marcas chicas de patas y otras grandes, hubo algun tipo de confrontacion, y solo dos van en direccion del cuarto de maquinas)
+
+			----(hijo perdido(sospechas de este vato))----
+				maquinista: [] i'm surprised you didn't die on the roof
+				[] you found him yet?
+				snowball: [] you disgusting sick degenerate piece of sub-feline filth
+				maquinista: [] what?
+
+				opcion 0:
+					snowball: [] is the boy just another "prospective worker" for you?
+					[] did you just not care when that happend to you?
+
+				opcion 1:
+					snowball: [] you know what
+					[] wheres the boy?
+					
+				(sin importar la opcion va aqui)
+					maquinista: [] I SAVED THAT BOY
+					[] He was running around on the roof wanting to die like his father
+					[] i brought him down, i saved his life, a life that would have been lost
+					[] now it's mine, and the companys to use as we see fit
+
+					snowball: [] you sick freak, where is he
+					maquinista: [cara enojada] shoveling coal in the engine room, getting used to his new life
+		  ----------snowball: [] (lo golpea, puede haber golpes? porque lo golpeo asi lo sento alv asi bien kbron)----------
+		  			(entra al motor y el maquinista brinca del tren alv)
+		  			(snowball sale del motor con el hijo llorando)
+
+
+	dialogos con la viuda
+		----(tren detenido)----
+			viuda: [] This train sure is taking it's time isn't it?
+
+			opcion 0:
+				snowball: [] i imagine the train has it's reasons
+
+			opcion 1:
+				snowball: [] it really is, it's quite strange  
+
+			viuda: [] someone should go see if the machinist isn't sleeping
+
+		----(tren en movimiento)----
+			viuda: [] Well, they didn't lie when they said that this isn't a luxury cabin
+			snowball: [] it's better than the roof
+			viuda: [] i guess it is
+
+			opcion 0:
+				snowball: [] And what are you doing in this first class seating?
+				viuda: [] on my way to the central station, going to cash some money my husbands owed, pay rent, pay my sons college
+				[]maybe get some new shoes with it
+				snowball: [] he worked for the company then?
+				viuda: [] on this very train, he was a brakeman for 35 years
+
+				opcion 0.0:
+					snowball: [] why didn't he ever switch jobs?
+					viuda: [] he didn't want anybody else to risk life and limb like that
+					[cara triste] like he did
+
+				opcion 0.1:
+					snowball: [] he must've had a death wish, or is a really brave man
+					viuda: [] he is an extremely brave man
+					[cara triste]
+
+			opcion que aparece despues de hablar con el hijo sobre su papa:
+				snowball: [] your son is quite upset about his father, did something happen?
+				viuda: [cara triste] A couple months back he was working a night shift, and there was a storm (se detiene a llorar)
+				snowball: [cara triste] you don't have to go on, i'm terribly sorry for your lost, he sounds like he was a good man
+				viuda: [] he was, and still is
+				[] he never cashed that debt with us in mind
+				[] he wanted to leave something behind in case anything ever happend to him
+
+		----(despues de que el escritor diga que smn)----	
+			viuda: [] hello kind man	
+			snowball: [] hi
+
+			opcion 0:
+				snowball: [] i was just talking with a childrens book writer that's onboard
+				[] and well, i thought that maybe it'd cheer up your son to be told a story
+				viuda: [] you look trustworthy
+				[] i'll consider him in good hands if you watch over him
+
+		----(hijo escuchando historias)----
+			viuda: [] how my little one doing?
+			snowball: [] perfectly, he's great
+
+		----(despues de hablar con el maquinista cuando el hijo esta escuchando historias)----
+			viuda: [] can you go tell my son to hurry up?
+			snowball: [] yeah, sure thing
+			viuda, it's about time he get's back, or atleast tells me how he's doing
+
+		----(hijo perdido)----
+			viuda: [] so when is he coming back, i'm starting to get nervous
+
+			opcion 0:
+				snowball: [] he's lost
+				[] but don't panic, i'll find him and bring him here safe and sound, the train isn't that large after all
+				viuda: [] you lost my child?
+				[] by the grace of God if something happens to him i'll smite you down where you stand
+
+			opcion 1:
+				snowball: [] oh he's just having fun over there, that guy is a natural story teller i tell you
+				viuda: [cara feliz] maybe i'll go over there and see if thats so
+				snowball: [] haha, yeah, maybe later i'll take you, but let the kid have fun
+				viuda: [] i'd very much like that, and your right, i'm just nervous is all
+				[] being a single parent is tough
+				snowball: [] that is true
+				[] well i'm off, byeeee
+
+			opcion 2:
+				snowball: [] hes getting a tour of the train, you know how much he likes trains
+				viuda: [] is he now?
+				[] well he hasn't passed through here yet, tell him to give a looksie down here, say hello to mama
+				snowball: [] of course, of course (i HAVE to find him)
+
+		----(hijo encontrado)----
+			si le dijiste que estaba perdido
+				viuda: [] you aren't completly incompetent
+				[] thank you very much for finding my son
+
+			si no
+				viuda: [] so what were you up to? i was so worried(al hijo)
+				snowball: [] he was in the bathroom
+				[] weren't you now?
+				hijo: [] yup, in the bathroom
+				[] he has been so nice to me mama
+				[] is there a way to be able to see him more often?
+				[] pleeeeeeeease?
+				viuda: [] oh well
+				[] your quite good with children mr kind man
+				[] how about you try and pass some more time with us?
+				snowball: [] i'll at the very least try very hard
+				viuda: [cara feliz] please do, hahahaha
+
+	dialogos con el morro
+		----(tren detenido)----
+			hijo: [] mama says that she wishes the train would just start already 
+
+			opcion 0:
+				snowball: [] and what do you wish?
+				hijo: [] i'm just happy to be on the train where my papa worked
+
+			opcion 1:
+				snowball: [] don't we all son
+
+		----(tren en movimiento)----
+			hijo: [cara neutral] Hi!
+			snowball: [] What's your deal son?
+			hijo: [cara feliz] I like trains
+			snowball: [cara feliz] Do you now? I work on the railway myself
+			hijo: [cara feliz] REALLY!!
+			[] I'd love to work on a train when i'm older, just like my daddy did
+			snowball: [] what did your daddy do?
+			hijo: [] he was super brave and cool, he would run on the roofs of trains to brake them, so they wouldn't crash
+			[] his job was very important, i bet i could do it too, just wait and see when i'm older
+			snowball: [cara triste] (He's a brakeman, poor guy)
+
+		opcion 0:
+			snowball: [] And where's your dad now? He sounds cool
+			hijo: [cara triste] Oh, umm... (llanto)
+				{aqui se considera que has hablado de su papa}
+
+		opcion 1:
+			snowball: [] Hey, how old are you?
+			hijo: [cara feliz] 10 and a half! Why?
+			snowball: [] Yep, your a wee lad still, your in perfect age to start working if you really want to
+			hijo: [] my mama says i'm still to small for that
+			snowball: [] that you are
+
+		----(despues de que el escritor y su mama te diga que smn)----
+			hijo: [] hi mister old cat sir
+			snowball: [] guess what son
+			hijo: [cara feliz] (giggles) what?
+
+			opcion 0:
+				snowball: [] i recently made an new friend
+				hijo: [] really? who is he?
+				snowball: [] a future big name writer, he wants you to be the first to hear his stories
+				hijo: [] REALLY!? Let's get going then 
+
+			opcion 1:
+				snowball: [] i made you an appointment
+				hijo: [cara feliz] yeah right, with whom if i may ask?
+				snowball: [] with a future award winning novelist, and right now THE best story writer ever
+				[] he wants you to be the first boy, girl, man, woman, or thing ever to hear his new stories
+				hijo: [cara feliz] let's go then!!
+
+		----(cuando lo sacas del motor)----
+			snowball: [] that piece of garbage just jumped from the train and left us downhill to crash
+			hijo: [cara triste] what are we going to do?
+			snowball: [] we're gonna have to brake it
+			[] i'll need your help, you stop half and i'll stop the other half
+			[] we'll need to do it quickly, let's go
+
+			(algun cronometro para ir al techo frenar los frenos y bajar al tren de vuelta)
+
+		----(conclusion)----
+			hijo: [] thank you very much mr kind man
+			[] i don't owe you right
+			opcion 0:
+				snowball: [] no, not at all
+
+			opcion 1:
+				snowball: [cara feliz] help me with your mama and i'll consider us even ;)
+				hijo: [] sure thing
+				[] i don't think i need to do much though
+				[] (susurra) she's pretty fond of you already
+
+	dialogos con el escritor
+		----(tren detenido)----
+			escritor: [] When will this infernal train finally start moving?
+			[] someone should go awake the beast
+
+			opcion 0:
+				snowball: [] I'll wait for you right here
+				escritor: [] i mean someone without depression
+
+			opcion 1:
+				snowball: [] I'm on my way over there right now
+				escritor: [] you sir are a true hero, i'll write my next story about you
+				[] it'll be a homage so wonderfull that all my readers will know your name!
+				[] try and come back after
+
+				opcion 1.0:
+					snowball: [] don't know, maybe
+
+				opcion 1.1:
+					snowball: [] of course i will
+
+		----(tren en movimiento)----
+			escritor: [] well hello everyday hero
+
+			opcion 1.0:
+					snowball: [] so your a writer? have i read anything of yours?
+					escritor: [] i don't believe, unless you really like childrens books
+					[] but i'm on my way of writing my novel, so be sure to read it when it comes out
+					snowball: [] i'll be sure to do that
+
+					opcion 1.0.0:
+						snowball: [] but you write childrens books?
+						escritor: [] i have to put food on the table somehow while i write my novel
+						[cara triste] if that means humiliating myself by writing for children, then by the grace of God it shall be
+						snowball: [] so you don't like what you do?
+						escritor: [] i despise it
+
+					opcion 1.0.1(si ya hablaste con el hijo de lo que sea):
+						snowball: [] you know, in the meantime, there's a kid on board who seems nice, and really likes trains
+						[] he's quite sad looking right now, can i bring him over? you tell him a story and cheer him up, that sort of thing
+						escritor: [] i despise myself for what i do for a living, i should be writing novels 
+						[] i should be respected by literary scholars around the globe, 
+						[] but instead i write books for children because my novels don't circulate
+						[] and now you want me to be some sort of jester for a child
+
+						opcion 1.0.1.0:
+							snowball: [] don't think of it as that, consider it more focus group of your future readers
+							[] feed him some simplified ideas and see what happens
+							escritor: [] hmm...
+							[] ...
+							[] fine, i'll test some stuff with him, send him over when ever
+
+						opcion 1.0.1.1:
+							snowball: [] come on man, he's like REALLY sad
+							escritor: [cara triste] so am i, and nobody gives me sympathy, only ridicule
+
+			opcion 1.1:
+					snowball: [] well i'll be on my way now
+
+		----(con el morro)----
+			escritor: [] well look at that, you did bring him
+
+			(con el morro)
+			escritor: [] you ready to listen to my genius?
+			hijo: [] i think i will be the judge of that
+
+			(al hijo):
+				snowball: [] are you good here little man?
+				[] i can stay if you want
+				hijo: [] i'm good, you can go do other stuff if you want
+
+			(al escritor):
+				snowball: [] You can take care of him right?
+				escritor: [] of course, i'll just send him out the door and in your direction once i'm gone
+				snowball: [] so be it
+
+		----(hijo perdido)----
+			escritor: [] i really really liked that young man
+			snowball: [] quite a smart lad isn't he?
+			escritor: [] that he sure is
+			[] anything else you needed
+			snowball: [] oh i just came for the boy, his mother started to get nervous
+			escritor: [cara de sorpresa] how isn't he there yet?
+			[] i sent him off a while ago 
+
+			snowball: [cara enojada] You lost the boy?
+			[] his mother will have my head
+			escritor: [] i saw him leave my wagon, after that i'm lost
+
+			opcion 0:
+				snowball: [] i'll have to tell his mother, maybe she has an idea of were he could be
+
+			opcion 1:
+				snowball: [] his mother can't know this, i'll have to hurry and make something up
+
+		----(hijo encontrado, tren detenido, o solo uno, alv en la conclusion)----
+			escritor: [] i guess now your a real hero
+			snowball: [] not even close, but you still owe a story to my name, make it interisting now
+			escritor: [] i'll try and do you right
