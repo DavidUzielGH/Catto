@@ -26,7 +26,7 @@
     "Branch0":{
       "Line0":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"Hi!"},
       "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"What's your deal son?"},
-      "Line2":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I like trains"},
+      "Line2":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I like trains and stories, and stories about trains"},
       "Line3":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Do you now? I work on the railway myself"},
       "Line4":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"REALLY!!"},
       "Line5":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"I'd love to work on a train when i'm older, just like my daddy did"},

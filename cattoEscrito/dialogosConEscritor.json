@@ -1,0 +1,132 @@
+{ 
+  "Scene25":{
+    "Branch0":{
+      "Line0":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"When will this infernal train finally start moving?"},
+      "Line1":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"someone should go awaken the man who makes the train go choo choo"},
+      "Choice":{
+  "Option0":{
+    "Head":"I'll wait for you right here",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"I'm on my way over there right now",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"I mean someone without depression"},      
+      "End":true
+    }, 
+    "Branch2":{ 
+      "Line0":{"name":"???", "portrait":"neutral", "side":"right", "dialogue":"you sir are a true hero, i'll write my next story about you"},
+      "Line1":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"it'll be a homage so wonderfull that all my readers will know your name!"},
+      "Line2":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"try and come back after"},
+      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"I'll sure try"},
+      "End":true
+    }
+  },
+
+  "Scene26":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"well hello everyday hero"},
+      "Line1":{"name":"Snowball", "portrait":"triste", "side":"left", "dialogue":"so your a writer? have i read anything of yours?"},
+      "Line2":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"i don't believe, unless you really like childrens books"},
+	  "Line3":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"but i'm on my way of writing my novel, so be sure to read it when it comes out"},
+	  "Line4":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"i'll be sure to do that"},
+	  "Line5":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"but you write childrens books?"},
+	  "Line6":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"i have to put food on the table somehow while i write my novel"},
+	  "Line7":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"if that means humiliating myself by writing for children, then by the grace of God it shall be"},
+	  "Line8":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"so you don't like what you do?"},
+	  "Line9":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"i despise it"},     
+    },
+  },
+
+  "Scene27":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"well hello everyday hero"}, 
+	  "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Hello there, you know, there's a kid on board who seems nice, and really likes trains"},
+	  "Line8":{"name":"Snowball", "portrait":"triste", "side":"left", "dialogue":"He's quite sad looking right now, can i bring him over? you tell him a story and cheer him up, that sort of thing"},
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I despise myself for what i do for a living, i should be writing novels "},
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I should be respected by literary scholars around the globe"},
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"But instead i write books for children because my novels don't circulate"},
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"And now you want me to be some sort of jester for a child"},
+      "Choice":{
+  "Option0":{
+    "Head":"Don't think of it as that, consider it more focus group of your future readers",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"Come on man, he's like REALLY sad",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{     
+      "Line":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Feed him some simplified ideas and see what happens"},
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"Hmm"},
+      "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"..."},
+      "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Fine, i'll test some stuff with him, send him over when ever"},
+      "End":true
+    }, 
+    "Branch2":{    
+      "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"So am i, and nobody gives me sympathy, only ridicule"},
+      "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"But fine, i'll help the kid out"},
+      "End":true
+    }
+  },
+
+  "Scene28":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Well look at that, you did bring him"},
+      "Line1":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"You ready to listen to my genius?"},
+      "Line2":{"name":"Child", "portrait":"neutral", "side":"left", "dialogue":"I think i will be the judge of that"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Are you good here little man?"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I can stay if you want"},
+      "Line5":{"name":"Child", "portrait":"neutral", "side":"left", "dialogue":"I'm good, you can go do other stuff if you want"},
+      "Line6":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"You can take care of him right?"},
+      "Line7":{"name":"Writer", "portrait":"neutral", "side":"left", "dialogue":"Of course, i'll just send him out the door and in your direction once i'm gone"},
+      "Line8":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"So be it"},
+    },
+  },
+
+  "Scene29":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I really really liked that young man"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Quite a smart lad isn't he?"},
+      "Line2":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"That he sure is"},
+      "Line3":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"Anything else you needed?"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"Oh i just came for the boy, his mother started to get nervous"},
+      "Line5":{"name":"Writer", "portrait":"sorpresa", "side":"right", "dialogue":"How isn't he there yet?"},
+      "Line6":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"I sent him off a while ago"},
+      "Line7":{"name":"Snowball", "portrait":"enojado", "side":"left", "dialogue":"You lost the boy?"},
+      "Line8":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"His mother will have my head"},
+      "Line9":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"I saw him leave my wagon, after that i'm lost"},
+      "Choice":{
+  "Option0":{
+    "Head":"I'll have to tell his mother, maybe she has an idea of were he could be",
+    "Tail":"Branch1"
+  },
+  "Option1":{
+    "Head":"His mother can't know this, i'll have to hurry and make something up",
+    "Tail":"Branch2"
+  }
+      }
+    },
+    "Branch1":{     
+      "End":true
+    }, 
+    "Branch2":{    
+      "End":true
+    }
+  },
+
+  "Scene30":{
+    "Branch0":{
+      "Line0":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I guess now your a real hero"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Not even close, but you still owe a story to my name, make it interisting now"},
+      "Line2":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I'll try and do you justice"},
+    },
+  },
+
+}
