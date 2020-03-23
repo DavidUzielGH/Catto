@@ -18,56 +18,7 @@
       "End":true
     }
   },
-  "Scene1":{
-    "Branch0":{
-      "Line0":{"name":"Fifi", "portrait":"neutral", "side":"right", "dialogue":"Esto es una linea predecisión"},
-      "Choice":{
-	"Option0":{
-	  "Head":"Hacer esto?",
-	  "Tail":"Branch1"
-	},
-	"Option1":{
-	  "Head":"Hacer esto otro?",
-	  "Tail":"Branch2"
-	}
-      }
-    },
-    "Branch1":{
-      "Line":{"name":"Fifi", "portrait":"feliz", "side":"left", "dialogue":"Escogiste Bien"},
-      "Event":{
-	"Name":"Fifi",
-	"Level":"1"
-      },
-      "End":true
-    }, 
-    "Branch2":{ 
-      "Line":{"name":"Fifi", "portrait":"feliz", "side":"right", "dialogue":"Escogiste Mal"},
-      "Event":{
-	"Name":"Fifi",
-	"Level":"2"
-      },
-      "End":true
-    }
-  },
   "Scene2":{
-    "Branch0":{
-      "Line":{"name":"Maquinista", "portrait":"feliz", "side":"left", "dialogue":"Yo era tronco comun"},
-      "Choice":{
-        "Option0":{
-          "Head":"pls bro",
-          "Tail":"Branch1"
-        },
-	"Option1":{
-	  "Head":"pls bro",
-	  "Tail":"Branch2"
-	}
-      }
-    },
-    "Branch1":{
-      "Line":{"name":"", "portrait":"", "side":"", "dialogue":""}
-    }
-  },
-  "Scene3":{
     "Branch0":{
       "Line":{"name":"", "portrait":"", "side":"left", "dialogue":"A donde quieres ir?"},
       "Choice":{
@@ -107,9 +58,306 @@
       "End":true
     }
   },
+  "Scene3":{
+    "Branch0":{
+      "Line0":{"name":"Machinist", "portrait":"enojado", "side":"left", "dialogue":"What do you want?"},
+      "Choice":{
+        "Option0":{
+          "Head":"Isn't the train supposed to be on by now?",
+          "Tail":"Branch1"
+        },
+	"Option1":{
+	  "Head":"I used to be a Machinist",
+	  "Tail":"Branch2"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Isn't the train supposed to be on by now?"},
+      "Line1":{"name":"Machinist", "portrait":"enojado", "side":"left", "dialogue":"I was just checking on the passengers, we'll be out shortly"},
+      "Line2":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Anything else?"},
+      "Choice":{
+        "Option0":{
+          "Head":"End talk",
+          "Tail":"Branch1.1"
+        },
+	"Option1":{
+	  "Head":"I used to be a machinist",
+	  "Tail":"Branch2"
+	}
+      }
+    },
+    "Branch1.1":{
+      "End":true
+    },
+    "Branch2":{
+      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I used to be a machinist myself"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Used to? Now what do you do?"},
+      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I'm on my way to make a new railway, maybe your train will ride it"},
+      "Line3":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"This here train is on it's last voyage, after this it's off to the scrapyard"},
+      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"This here train is on it's last voyage, after this it's off to the scrapyard "},
+      "Line5":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"Prospective future workers?"},
+      "Line6":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers"},
+      "Line7":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"sometimes a young guy gets on the train, or hitchs a ride, and they need a job, or they're running from something, or maybe they're lost and just give up, in the force we call them easy fallers"},
+      "Choice":{
+        "Option0":{
+          "Head":"That sound terrible!",
+          "Tail":"Branch3"
+        },
+	"Option1":{
+	  "Head":"How does one get a job like this?",
+	  "Tail":"Branch4"
+	}
+      }
+    },
+    "Branch3":{
+      "Line0":{"name":"Snowball", "portrait":"enojado", "side":"right", "dialogue":"That sounds horrible!"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Yep, but you can change jobs after a while, i was a brakeman for decades before i became a machinist"},
+      "Line2":{"name":"Snowball", "portrait":"triste", "side":"right", "dialogue":"You where an easy faller?, what happened?"},
+      "Line3":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"I liked trains, one day I got lost on a train without my mom when I was a young boy"},
+      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"When the train finally got to central station they just gave me an uniform and told me I was theirs"},
+      "Line5":{"name":"Snowball", "portrait":"sorpresa", "side":"right", "dialogue":"Your poor mother, she must have been devestaded "},
+      "Line6":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Either they told her i was dead, or she was happy she had one less mouth to feed, because i haven't seen her since "}
+    },
+    "Branch4":{
+      "Line0":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"How does one get a job like this?"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Just do what i did "},
+      "Line2":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"what happend with you?"},
+      "Line3":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"I liked trains, one day I got lost on a train without my mom when I was a young boy"},
+      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"When the train finally got to central station they just gave me an uniform and told me I was theirs"},
+      "Line5":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Did your mother just not care"},
+      "Line6":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Either they told her I was dead, or she was happy she had one less mouth to feed, because I haven't seen her since"}
+    }
+  },
   "Scene4":{
     "Branch0":{
-      
+      "Line0":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"what now?"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I took a child with a writer on board"},
+      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"to listen to some stories since he was a bit sad "},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"just passing the time now "},
+      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"a young boy?"},
+      "Line5":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"About 10 and a half"},
+      "Line6":{"name":"Machinist", "portrait":"feliz", "side":"left", "dialogue":"about 10 and a half "},
+      "Line7":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Well you should get going, it's not safe over here"}
+    }
+  },
+  "Scene5":{
+    "Branch0":{
+      "Line0":{"name":"Machinist", "portrait":"enojado", "side":"right", "dialogue":"What are you doing here?"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"right", "dialogue":"You already know it's dangerous"},
+      "Line2":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"Have you seen a boy?"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"We've lost him and I said I would be responsible for his safety"},
+      "Line4":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Well I haven't seen him pass through here, you should check the roof"},
+      "Line5":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"Maybe he went up trying to see what his dad did"}
+    }
+  },
+  "Scene6":{
+    "Branch0":{
+      "Line0":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"I'm surprised you didn't die on the roof"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"You found him yet?"},
+      "Line2":{"name":"Snowball", "portrait":"enojado", "side":"right", "dialogue":"You disgusting sick degenerate piece of sub-feline filth "},
+      "Line3":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"What?"},
+      "Choice":{
+        "Option0":{
+          "Head":"is the boy just another prospective worker for you?  ",
+          "Tail":"Branch1"
+        },
+	"Option1":{
+	  "Head":"You know what",
+	  "Tail":"Branch1"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"The boy?"},
+      "Line1":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"I saved him"},
+      "Line2":{"name":"Machinist", "portrait":"feliz", "side":"left", "dialogue":"He was running around on the roof wanting to die like his father "},
+      "Line3":{"name":"Machinist", "portrait":"feliz", "side":"left", "dialogue":"I brought him down, i saved his life, a life that would have been lost "},
+      "Line4":{"name":"Machinist", "portrait":"feliz", "side":"left", "dialogue":"Now he's mine, and the companys to use as we see fit"},
+      "Line5":{"name":"Snowball", "portrait":"enojado", "side":"right", "dialogue":"You sick freak, where is he "},
+      "Line6":{"name":"Machinist", "portrait":"triste", "side":"left", "dialogue":"Shoveling coal in the engine room, getting used to his new life"},
+      "Line7":{"name":"Snowball", "portrait":"enojado", "side":"right", "dialogue":"You bastard, tell me where he is or I will punch the truth out of you!"},
+      "Line8":{"name":"Machinist", "portrait":"neutral", "side":"left", "dialogue":"..."},
+      "Line9":{"name":"Machinist", "portrait":"feliz", "side":"left", "dialogue":"..."},
+      "Line10":{"name":"Snowball", "portrait":"sorpresa", "side":"right", "dialogue":"..."},
+      "Line10":{"name":"Snowball", "portrait":"sorpresa", "side":"right", "dialogue":"He jumped off the train!"}
+    }
+  },
+  "Scene7":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"right", "dialogue":"This train sure is taking it's time isn't it?"},
+      "Choice":{
+        "Option0":{
+          "Head":"I imagine the train has it's reasons",
+          "Tail":"Branch1"
+        },
+	"Option1":{
+	  "Head":"It ireally is, it's quite strange",
+	  "Tail":"Branch1"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"someone should go see if the machinist isn't sleeping "}
+    }
+  },
+  "Scene8":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":""},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"It's better than the roof"},
+      "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"I guess it is"},
+      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On my way to the central station, going to cash some money my husbands owed, pay rent, pay my sons college"},
+      "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Maybe get some new shoes with it"},
+      "Line5":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"He worked for the company then?"},
+      "Line6":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On this very train, he was a brakeman for 35 years"},
+      "Choice":{
+        "Option0":{
+          "Head":"Why didn't he ever switch jobs?",
+          "Tail":"Branch2"
+        },
+	"Option1":{
+	  "Head":"He must've had a death wish, or is a really brave man",
+	  "Tail":"Branch3"
+	}
+      }
+    },
+    "Branch2":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He didn't want anybody else to risk life and limb like that"},
+      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"Like he did"}
+    },
+    "Branch3":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He is an extremely brave man"},
+      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"..."}
+    }
+  },
+  "Scene9":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":""},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"It's better than the roof"},
+      "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"I guess it is"},
+      "Choice":{
+        "Option0":{
+          "Head":"And what are you doing in this first class seating?",
+          "Tail":"Branch1"
+	},
+	"Option1":{
+	  "Head":"Your son said something about hist father",
+	  "Tail":"Branch4"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On my way to the central station, going to cash some money my husbands owed, pay rent, pay my sons college"},
+      "Line1":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Maybe get some new shoes with it"},
+      "Line2":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"He worked for the company then?"},
+      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On this very train, he was a brakeman for 35 years"},
+      "Choice":{
+        "Option0":{
+          "Head":"Why didn't he ever switch jobs?",
+          "Tail":"Branch2"
+        },
+	"Option1":{
+	  "Head":"He must've had a death wish, or is a really brave man",
+	  "Tail":"Branch3"
+	}
+      }
+    },
+    "Branch2":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He didn't want anybody else to risk life and limb like that"},
+      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"Like he did"}
+    },
+    "Branch3":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He is an extremely brave man"},
+      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"..."}
+    },
+    "Branch4":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"A couple months back he was working a night shift, and there was a storm.."},
+      "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"..."},
+      "Line2":{"name":"Snowball", "portrait":"triste", "side":"right", "dialogue":"You don't have to go on, I'm terribly sorry for your lost, he sounds like he was a good man "},
+      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He was and still is"},
+      "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He never cashed that debt with us in mind"},
+      "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He wanted to leave something behind in case anything ever happend to him"}
+    }
+  },
+  "Scene10":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Hello kind man"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Hello"},
+      "Line2":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"I was just talking with a childrens book writer that's onboard"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"And well, i thought that maybe it'd cheer up your son to be told a story"},
+      "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"You look trustworthy"},
+      "Line5":{"name":"Widn", "portrait":"neutral", "side":"left", "dialogue":"I'll consider him in good hands if you watch over him"}
+      }
+  },
+  "Scene11":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"How is my little boy doing?"},
+      "Line1":{"name":"Snowball", "portrait":"feliz", "side":"right", "dialogue":"Perfectly, he's great"}
+    }
+  },
+  "Scene12":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Can you tell my son to hurry up?"},
+      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Yeah, sure thing"},
+      "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"It's about time he get's back, or at least tells me how he's doing"}
+    }
+  },
+  "Scene13":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"So when is he coming back, i'm starting to get nervous"},
+      "Choice":{
+	"Option0":{
+	  "Head":"He's lost",
+	  "Tail":"Branch1"
+	},
+	"Option1":{
+	  "Head":"He's fine",
+	  "Tail":"Branch2"
+	},
+	"Option2":{
+	  "Head":"He's getting a tour",
+	  "Tail":"Branch3"
+	}
+      }
+    },
+    "Branch1":{
+      "Line0":{"name":"Snowball", "portrait":"sorpresa", "side":"right", "dialogue":"But don't panic, i'll find him and bring him here safe and sound, the train isn't that large after all"},
+      "Line1":{"name":"Widow", "portrait":"sorpresa", "side":"left", "dialogue":"You lost my child?"},
+      "Line2":{"name":"Widow", "portrait":"sorpresa", "side":"left", "dialogue":"By the grace of God if something happens to him i'll smite you down where you stand"}
+    },
+    "Branch2":{
+      "Line0":{"name":"Snowball", "portrait":"feliz", "side":"right", "dialogue":"Oh, he's just having a grand ol' time over there, that guy is a master, the best of the best at what he does I assure you"},
+      "Line1":{"name":"Widow", "portrait":"feliz", "side":"left", "dialogue":"Really? Oh my, I'll go have a look right now!"},
+      "Line2":{"name":"Snowball", "portrait":"feliz", "side":"right", "dialogue":"Haha, yeah, maybe later i'll take you, but let the kid have fun"},
+      "Line3":{"name":"Widow", "portrait":"feliz", "side":"left", "dialogue":"I'd very much like that, and your right, i'm just nervous is all"},
+      "Line4":{"name":"Snowball", "portrait":"feliz", "side":"right", "dialogue":"Haha, yeah, nervous, well, I'm off, gotta do... other stuff around, I'm off, bye!"}
+    },
+    "Branch3":{
+      "Line0":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Hes getting a tour of the train, you know how much he likes trains"},
+      "Line1":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Is he now?"},
+      "Line2":{"name":"Widow", "portrait":"neutral", "side":"right", "dialogue":"Well he hasn't passed through here yet, tell him to give a looksie down here, say hello to mama"},
+      "Line3":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"Of course, of course (i HAVE to find him)"}
+    }
+  },
+  "Scene14":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"You aren't completely incompetent"},
+      "Line1":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Thank you very much for finding my son"}
+    }
+  },
+  "Scene15":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"So, what were you up to? I was worried"},
+      "Line1":{"name":"Snowball", "portrait":"sorpresa", "side":"right", "dialogue":"He was in the bathroom"},
+      "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Weren't you now?"},
+      "Line3":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"Yup, in the bathroom"},
+      "Line4":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"He has been really nice to me, mama"},
+      "Line5":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"Can I see him again?"},
+      "Line6":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"Please, please, pleaseee?"},
+      "Line7":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Oh, well"},
+      "Line8":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Kind man, you are quite good with children"},
+      "Line9":{"name":"Snowball", "portrait":"feliz", "side":"right", "dialogue":"I'll at the very least try very hard"},
+      "Line10":{"name":"Widow", "portrait":"feliz", "side":"left", "dialogue":"Please do! Haha"}
     }
   }
 }
