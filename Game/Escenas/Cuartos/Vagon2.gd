@@ -2,7 +2,7 @@ extends "res://Scripts/Room.gd"
 
 
 # Declare member variables here. Examples:
-# var a = 2
+# var a =  
 # var b = "text"
 
 

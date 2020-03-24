@@ -229,12 +229,12 @@
     "Branch0":{
       "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Well, they didn't lie when they said that this isn't a luxury cabin"},
       "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"At least it's better than the roof"},
-      "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"I guess it is"},
-      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"And what are you doing in this first class transport"},
-      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On my way to the central station, going to cash some money my husband was owed, pay rent, pay for my sons college"},
-      "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Maybe get some new shoes with it"},
-      "Line5":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"He worked for the company then?"},
-      "Line6":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On this very train, he was a brakeman for 35 years"},
+      "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"I guess it is"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"And what are you doing in this first class transport"},
+      "Line5":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On my way to the central station, going to cash some money my husband was owed, pay rent, pay for my sons college"},
+      "Line6":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Maybe get some new shoes with it"},
+      "Line7":{"name":"Snowball", "portrait":"dudoso", "side":"right", "dialogue":"He worked for the company then?"},
+      "Line8":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"On this very train, he was a brakeman for 35 years"},
       "Choice":{
         "Option0":{
           "Head":"Why didn't he ever switch jobs?",
@@ -268,7 +268,7 @@
   },
   "Scene9":{
     "Branch0":{
-      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":""},
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"Well, they didn't lie when they said that this isn't a luxury cabin"},
       "Line1":{"name":"Snowball", "portrait":"neutral", "side":"right", "dialogue":"It's better than the roof"},
       "Line2":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"I guess it is"},
       "Choice":{
@@ -319,7 +319,7 @@
     "Branch4":{
       "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"A couple months back he was working a night shift, and there was a storm.."},
       "Line1":{"name":"Widow", "portrait":"triste", "side":"left", "dialogue":"..."},
-      "Line2":{"name":"Snowball", "portrait":"triste", "side":"right", "dialogue":"You don't have to go on, I'm terribly sorry for your lost, he sounds like he was a good man "},
+      "Line2":{"name":"Snowball", "portrait":"triste", "side":"right", "dialogue":"You don't have to go on, I'm terribly sorry for your loss, he sounds like he was a good man "},
       "Line3":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He was and still is"},
       "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He never cashed that debt with us in mind"},
       "Line4":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"He wanted to leave something behind in case anything ever happend to him"},
@@ -346,6 +346,12 @@
       "Line5":{"name":"Widn", "portrait":"neutral", "side":"left", "dialogue":"I'll consider him in good hands if you watch over him"},
       "End":true
       }
+  },
+  "Scene101":{
+    "Branch0":{
+      "Line0":{"name":"Widow", "portrait":"neutral", "side":"left", "dialogue":"..."},
+      "End":true
+    }
   },
   "Scene11":{
     "Branch0":{
@@ -480,10 +486,10 @@
       "End":true
     }, 
     "Branch2":{ 
-      "Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"10 and a half! Why?"},
+      "Line0":{"name":"Child", "portrait":"neutral", "side":"right", "dialogue":"10 and a half! Why?"},
       "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Yep, your a wee lad still, your in perfect age to start working if you really want to"},
-      "Line2":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"my mama says i'm still to small for that"},
-      "Line1":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"that you are"},      
+      "Line3":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"my mama says i'm still to small for that"},
+      "Line4":{"name":"Snowball", "portrait":"neutral", "side":"left", "dialogue":"that you are"},      
       "Event":{
       	"Name":"Child",
       	"Level":"211"
@@ -493,7 +499,7 @@
   },
   "Scene211":{
   	"Branch0":{
-  		"Line0":{"name":"Child", "portrait":"triste", "side":"right", "dialogue":"Trains are cool"},
+  		"Line0":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"Trains are cool"},
   		"End":true
   	}
   },
@@ -528,7 +534,12 @@
       "End":true
     }
   },
-
+  "Scene221":{
+    "Branch0":{
+      "Line0":{"name":"Child", "portrait":"feliz", "side":"right", "dialogue":"I can't wait!"},
+      "End":true
+    }
+  },
   "Scene23":{
     "Branch0":{
       "Line0":{"name":"Snowball", "portrait":"enojado", "side":"left", "dialogue":"that piece of garbage just jumped from the train and left us downhill to crash"},
@@ -626,7 +637,7 @@
       "Line6":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"And now you want me to be some sort of jester for a child"},
       "Choice":{
   "Option0":{
-    "Head":"Don't think of it as that, consider it more focus group of your future readers",
+    "Head":"Consider it more like a focus group of your future readers",
     "Tail":"Branch1"
   },
   "Option1":{
@@ -645,6 +656,10 @@
     "Branch2":{    
       "Line":{"name":"Writer", "portrait":"triste", "side":"right", "dialogue":"So am i, and nobody gives me sympathy, only ridicule"},
       "Line":{"name":"Writer", "portrait":"neutral", "side":"right", "dialogue":"But fine, i'll help the kid out"},
+      "Event":{
+        "Name":"Writer",
+        "Level":"271"
+      },
       "End":true
     }
   },
@@ -702,6 +717,7 @@
       "Line0":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I guess now your a real hero"},
       "Line1":{"name":"Snowball", "portrait":"feliz", "side":"left", "dialogue":"Not even close, but you still owe a story to my name, make it interisting now"},
       "Line2":{"name":"Writer", "portrait":"feliz", "side":"right", "dialogue":"I'll try and do you justice"},
-    },
+      "End":true
+    }
   }
 }

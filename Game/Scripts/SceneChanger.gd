@@ -3,7 +3,7 @@ extends CanvasLayer
 signal scene_changed()
 
 var animation_player
-var previous_scene = "Caldera"
+var previous_scene = "Intro"
 var disable_interact = false
 
 func _ready():

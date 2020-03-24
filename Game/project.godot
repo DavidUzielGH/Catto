@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Game"
-run/main_scene="res://Escenas/Cuartos/Vagon1.tscn"
+run/main_scene="res://Escenas/Cuartos/Intro.tscn"
 
 [autoload]
 

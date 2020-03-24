@@ -75,7 +75,7 @@ func start(scene_number : String):
 	end_scene()
 	
 func end_scene(): 
-	print(emit_signal("dialogue_ended"))
+	emit_signal("dialogue_ended")
 	toggle_visibility()
 	is_on_dialogue = false
 	curr_branch = "Branch0"

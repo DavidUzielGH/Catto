@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Escenas/Cuartos/Vagon2.gd" type="Script" id=1]
-[ext_resource path="res://Imagenes/Escenarios/Cinematic.png" type="Texture" id=2]
-[ext_resource path="res://Imagenes/Escenarios/Vagon.png" type="Texture" id=3]
+[ext_resource path="res://Imagenes/Escenarios/Vagon.png" type="Texture" id=2]
+[ext_resource path="res://Imagenes/Escenarios/Cinematic.png" type="Texture" id=3]
 [ext_resource path="res://Escenas/Characters/Widow.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Escenas/Characters/Child.tscn" type="PackedScene" id=5]
 
@@ -70,11 +70,11 @@ fov = 71.7
 
 [node name="Sprite3D" type="Sprite3D" parent="Camera"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.737 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 
 [node name="Sprite3D2" type="Sprite3D" parent="Camera"]
 transform = Transform( 0.022, 0, 0, 0, 0.03, 0, 0, 0, 0.022, 0, 0, -0.17 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="DoorsSpawns" type="Node" parent="."]
 

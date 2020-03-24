@@ -87,6 +87,18 @@ visible = false
 [node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Transition"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.243298, -1.97535 )
 
+[node name="Intro" type="Area" parent="DoorsSpawns"]
+
+[node name="CollisionShape2" type="CollisionShape" parent="DoorsSpawns/Intro"]
+transform = Transform( 0.614734, 0, 0, 0, 0.984515, -0.0121908, 0, 0.175298, 0.0684664, -0.05529, 0.00936355, -0.290533 )
+shape = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="DoorsSpawns/Intro/CollisionShape2"]
+visible = false
+
+[node name="SpawnPoint" type="Spatial" parent="DoorsSpawns/Intro"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0453282, -0.264325 )
+
 [node name="Characters" type="Node" parent="."]
 
 [node name="Writer" parent="Characters" instance=ExtResource( 3 )]
